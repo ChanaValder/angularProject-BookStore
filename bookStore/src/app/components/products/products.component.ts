@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../../shared/models/book.model';
 
 @Component({
   selector: 'app-products',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   constructor() { }
-  bookList:book[];
+  bookList:Book[];
   ngOnInit() {
    this.bookList
   }
