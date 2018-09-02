@@ -66,16 +66,13 @@ app.post("/api/register", (req, res) => {
 //     res.status(201).send(JSON.stringify(correntList));
 // })
 
-app.get("/api/login", (req, res) => {
+app.post("/api/login", (req, res) => {
     let correntList = require("./user.json");
-    let allUser=JSON.stringify(correntList);
-    let user=null;
-    console.log(allUser);
-    var date=JSON.parse(allUser,(value)=>{if(value.userName==req.body.userName&&value.password==req.body.password)
-    user=value;
-    })
-    if(user)
-   res.status(201).send(value);
+    let allUser=JSON.parse(JSON.stringify(correntList));
+    console.log(req.body.userName+ " "+req.body.userPassword)
+   allUser.filter( element =>{  element['userName']==req.body.userName&&element['userPassword']==req.body.userPassword});
+    if(allUser[0])
+     res.status(201).send(allUser[0]);
     else res.status(400).send();
 })
 const port = process.env.PORT || 3500;

@@ -18,11 +18,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 524db0a81af8596ee96c987f005c698391265c91
 const appRoutes: Routes = [
   { path: 'bookStore/home', component: HomeComponent },
   { path: 'bookStore/myAccount', component: AccountComponent },
@@ -54,16 +51,11 @@ const appRoutes: Routes = [
     RegisterComponent
   ],
   imports: [
-<<<<<<< HEAD
     BrowserModule, 
      RouterModule.forRoot( appRoutes ),
      ReactiveFormsModule, 
     HttpClientModule,
     BrowserModule,
-=======
- 
-    BrowserModule, HttpClientModule,
->>>>>>> 524db0a81af8596ee96c987f005c698391265c91
      RouterModule.forRoot( appRoutes ),
      ReactiveFormsModule, 
     FormsModule,],
