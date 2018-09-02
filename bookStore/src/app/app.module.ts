@@ -35,6 +35,21 @@ const appRoutes: Routes = [
 
 ];
 
+const appRoutes2: Routes = [
+ 
+  { path: 'myAccount', component: AccountComponent,children:[
+    { path: 'login', component: LoginComponent }, // url: about/
+    { path: 'register', component: RegisterComponent },// url: about/item
+  ] },
+  { path: '', component: HomeComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'myCart', component: CartComponent },
+  
+
+
+];
+
+
 
 @NgModule({
   declarations: [
@@ -52,12 +67,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule, 
-     RouterModule.forRoot( appRoutes ),
+     RouterModule.forRoot(appRoutes2),
      ReactiveFormsModule, 
     HttpClientModule,
-    BrowserModule,
-     RouterModule.forRoot( appRoutes ),
-     ReactiveFormsModule, 
     FormsModule,],
   providers: [BookStoreService],
   bootstrap: [AppComponent]
