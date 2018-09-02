@@ -16,7 +16,7 @@ import { RegisterComponent } from './components/register/register.component';
 const appRoutes: Routes = [
   { path: 'bookStore/home', component:HomeComponent  },
   { path: 'bookStore/home/login', component:LoginComponent  },
-  { path: 'bookStore/home/register', component:RegisterComponent  }
+  { path: 'bookStore/home/register', component:RegisterComponent  },
   { path: 'bookStore/home/productDetails/:id',component: ProductDetailsComponent },
 ];
 
