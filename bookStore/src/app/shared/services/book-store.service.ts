@@ -22,7 +22,9 @@ adressStore:Adress
 
    login(user): void {
     this.httpClient.post(this.basicURL+"/login",user).subscribe(
-        (res) => { alert("good")},err=>{alert("bad")}
+        (res) => {
+          localStorage.setItem("user", JSON.stringify(res));
+           }
         
     )
   }
