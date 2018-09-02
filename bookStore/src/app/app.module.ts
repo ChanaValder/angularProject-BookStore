@@ -28,7 +28,9 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent },// url: about/item
   ] },
   { path: '', component: HomeComponent },
-  { path: 'products', component: ProductsComponent },
+  { path: 'products', component: ProductsComponent ,children:[
+    { path: 'products', component: ProductsComponent}
+  ]},
   { path: 'myCart', component: CartComponent },
   
 

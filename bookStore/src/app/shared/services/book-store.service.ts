@@ -23,13 +23,7 @@ export class BookStoreService {
 
     return this.httpClient.get<Book[]>(this.basicURL+"/getList");
    
-
-
-<<<<<<< HEAD
    }
-=======
-   
->>>>>>> 9293cf645b71976e2afef8bd907265be73df23ea
    
    getMyCart()
    {
