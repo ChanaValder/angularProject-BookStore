@@ -4,6 +4,7 @@ import { Adress } from '../models/Adress.model';
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { error } from '../../../../node_modules/protractor';
+import { Book } from '../models/book.model';
 
 @Injectable({
   providedIn: 'root'
@@ -29,12 +30,15 @@ export class BookStoreService {
    }
    removeBookFromMyCart()
    {
-      
+    let bookList = this.getMyCart();
+    bookList.push(book);
    }
 
-   addBookToMyCart()
+   addBookToMyCart(book:Book)
    {
-     
+    let bookList = this.getMyCart();
+    bookList.push(book);
+    localStorage.setItem("myCart", JSON.stringify(bookList));
    }
    
  
