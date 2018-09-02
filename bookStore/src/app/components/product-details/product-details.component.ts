@@ -7,10 +7,11 @@ import { Router, Routes, ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-
+book:string;
   constructor( private route: ActivatedRoute) { 
 
-    let titlebook = this.route.snapshot.paramMap.get('booktitle');
+    this.route.params.subscribe( params =>{ console.log(params['booktitle']);
+  this.book=params['booktitle']} );
     
   }
 

@@ -24,7 +24,10 @@ export class LoginComponent  {
     };
 
     this.formGroup = new FormGroup(formGroupConfig);
+
+
   }
+        
 
   //----------------METHODS-------------------
   submitLogin() {
@@ -33,6 +36,7 @@ export class LoginComponent  {
       return;
     }
      else{ 
+       console.log("ok");
       this.user=this.formGroup.value;
       this.userService.login(this.user);
     }

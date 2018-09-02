@@ -13,11 +13,11 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { BookStoreService } from '././shared/services/book-store.service'
-import { registerContentQuery } from '../../node_modules/@angular/core/src/render3/instructions';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
-import { ProductPreviewComponent } from './product-preview/product-preview.component';
+import { ProductPreviewComponent } from './components/product-preview/product-preview.component';
 import { UserService } from './shared/services/user.service';
+import { CartProductComponent } from '../app/components/cart-product/cart-product.component';
 
 
 
@@ -28,9 +28,8 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent },// url: about/item
   ] },
   { path: '', component: HomeComponent },
-  { path: 'products', component: ProductsComponent ,children:[
-    { path: 'productsDetails/:booktitle', component: ProductDetailsComponent}
-  ]},
+  { path: 'productsDetails/:booktitle', component: ProductDetailsComponent},
+  { path: 'products', component: ProductsComponent },
   { path: 'myCart', component: CartComponent },
   
 
@@ -52,7 +51,8 @@ const appRoutes: Routes = [
     ProductDetailsComponent,
     LoginComponent,
     RegisterComponent,
-    ProductPreviewComponent
+    ProductPreviewComponent,
+    CartProductComponent
   ],
   imports: [
     BrowserModule, 

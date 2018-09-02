@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import{User} from '../../shared/models/User.model'
-import{BookStoreService} from '../../shared/services/book-store.service';
+import { User } from '../../shared/models/User.model'
+import { BookStoreService } from '../../shared/services/book-store.service';
 import { UserService } from '../../shared/services/user.service';
 
 @Component({
@@ -9,14 +9,21 @@ import { UserService } from '../../shared/services/user.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  user:User;
-  constructor(private userService:UserService) {
-    this.user=this.userService.user;
-   // this.user.imgUrl="default.png";
-   }
+  user: User;
+  constructor(private userService: UserService) {
+    this.user=this.userService.checkUserLogin();
+    this.userService.subject.subscribe(
+      {
+        next: (v: any) => {
+          this.user = v;
+        }
+      })
+  }
+  // this.user.imgUrl="default.png";
+
 
   ngOnInit() {
-  
+
   }
 
 }
