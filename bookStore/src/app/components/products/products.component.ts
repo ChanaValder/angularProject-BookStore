@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../../shared/models/book.model';
-<<<<<<< HEAD
 import { BookStoreService } from '../../shared/services/book-store.service';
-=======
->>>>>>> 6b936f2d7b9e8c0e6d606dafba8ebbcd2cfed0a8
 
 @Component({
   selector: 'app-products',
@@ -12,14 +9,10 @@ import { BookStoreService } from '../../shared/services/book-store.service';
 })
 export class ProductsComponent implements OnInit {
 
-<<<<<<< HEAD
   constructor(private bookStoreService:BookStoreService) { }
-=======
-  constructor() { }
->>>>>>> 6b936f2d7b9e8c0e6d606dafba8ebbcd2cfed0a8
   bookList:Book[];
   ngOnInit() {
-   this.bookList.
+   this.bookStoreService.getBooks().subscribe(res=>{this.bookList=res},err=>{alert("error")});
   }
 
 }

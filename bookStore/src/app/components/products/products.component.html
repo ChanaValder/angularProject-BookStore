@@ -1,6 +1,7 @@
 <div>
   <h1>my books</h1>
   <div *ngFor="let book of bookList">
-    <app-product-preview></app-product-preview>
+    <p>{{book.volumeInfo.title}}</p>
+    <!-- <app-product-preview></app-product-preview> -->
   </div>
 </div>
