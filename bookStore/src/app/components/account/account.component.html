@@ -1,8 +1,11 @@
 
 <h2>myAccount</h2>
-<a [routerLink]="['/myAccount/login']">login</a>
-<a [routerLink]="['/myAccount/register']">register</a>
-<a [routerLink]="['/home']" (click)="logout()">logout</a>
+<li *ngIf="!user">
+<a  [routerLink]="['/myAccount/login']">login</a></li>
+<li *ngIf="!user">
+<a  [routerLink]="['/myAccount/register']">register</a></li>
+<li *ngIf="user">
+<a  [routerLink]="['/home']" (click)="logout()">logout</a></li>
 <div class="inner-outlet">
   <router-outlet></router-outlet>
 </div> 

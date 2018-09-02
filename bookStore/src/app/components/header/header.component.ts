@@ -10,7 +10,8 @@ import { UserService } from '../../shared/services/user.service';
 })
 export class HeaderComponent implements OnInit {
   user: User;
-  constructor(private userService: UserService) {
+  countMyCard:number=0;
+  constructor(private userService: UserService,public bookService:BookStoreService) {
     this.user=this.userService.checkUserLogin();
     this.userService.subject.subscribe(
       {
@@ -18,6 +19,13 @@ export class HeaderComponent implements OnInit {
           this.user = v;
         }
       })
+      
+      this.bookService.subject.subscribe(
+        {
+          next: (v: any) => {
+            this.countMyCard = v;
+          }
+        })
   }
   // this.user.imgUrl="default.png";
 

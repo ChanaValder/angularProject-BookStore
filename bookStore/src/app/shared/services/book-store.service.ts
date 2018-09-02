@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import{User} from '../models/User.model'
 import { Adress } from '../models/Adress.model';
-import { Observable } from "rxjs";
+import { Observable, Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { error } from '../../../../node_modules/protractor';
 import { Book } from '../models/book.model';
@@ -11,7 +11,7 @@ import { Book } from '../models/book.model';
 })
 export class BookStoreService {
 
- 
+ subject=new Subject();
  
   basicURL:string="http://localhost:3500/api";
   bookList:Book[];
@@ -38,8 +38,9 @@ export class BookStoreService {
    }
    removeBookFromMyCart(book:Book)
    {
-    let bookList = this.getMyCart();
-    bookList.push(book);
+    let bookList:any = this.getMyCart();
+    //bookList.splice(bookList.findIndex(x=>x.booktitle==book),1);
+    localStorage.setItem("taskList", JSON.stringify(bookList));;
    }
 
    addBookToMyCart(book:Book)
@@ -47,6 +48,8 @@ export class BookStoreService {
     let bookList = this.getMyCart();
     bookList.push(book);
     localStorage.setItem("myCart", JSON.stringify(bookList));
+    this.subject.next(this.getMyCart().count)
+
    }
    
  

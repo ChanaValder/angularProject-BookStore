@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BookStoreService } from '../../shared/services/book-store.service';
 
 @Component({
   selector: 'app-cart-product',
@@ -7,10 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CartProductComponent implements OnInit {
 @Input()  book:string;
-  constructor() { }
+  constructor(public bookService:BookStoreService) { }
 
   ngOnInit() {
     console.log(this.book);
+  }
+
+  removeBookMyCart()
+  {
+this.bookService.removeBookFromMyCart(this.book)
   }
 
 }

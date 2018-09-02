@@ -11,7 +11,7 @@
 <ul class="nav navbar-nav">
   <li routerLinkActive="active"><a [routerLink]="['/myAccount']">my account</a></li>
   <li routerLinkActive="active"><a [routerLink]="['/products']">products</a></li>
-  <li *ngIf="user" routerLinkActive="active"><a routerLink="['/myCart']">my cart</a></li>
+  <li *ngIf="user" routerLinkActive="active"><a [routerLink]="['/myCart']">my cart num products is: {{countMyCard}}</a></li>
 </ul>
 
 
