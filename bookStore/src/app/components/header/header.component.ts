@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   user:User;
   constructor(private bookStoreService:BookStoreService) {
     this.user=this.bookStoreService.user;
+   // this.user.imgUrl="default.png";
    }
 
   ngOnInit() {
