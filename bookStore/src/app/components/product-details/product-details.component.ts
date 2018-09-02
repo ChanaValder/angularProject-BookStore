@@ -3,6 +3,7 @@ import { Router, Routes, ActivatedRoute } from '@angular/router';
 import { BookStoreService } from '../../shared/services/book-store.service';
 import { User } from '../../shared/models/User.model';
 import { UserService } from '../../shared/services/user.service';
+import { VolumeInfo } from '../../shared/models/volum-info.model';
 
 @Component({
   selector: 'app-product-details',
@@ -10,13 +11,15 @@ import { UserService } from '../../shared/services/user.service';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-book:string;
+book:VolumeInfo;
+titleBook:string
 user:User;
   constructor( private route: ActivatedRoute,public bookService:BookStoreService,
     public userService:UserService,public router:Router) { 
-
-    this.route.params.subscribe( params =>{ console.log(params['booktitle']);
-     this.book=params['booktitle']} );
+      this.user=this.userService.checkUserLogin();
+      console.log(this.user);
+    this.route.params.subscribe( params =>{ console.log(params['book']);
+     this.titleBook=params['book']} );
     
   }
 
@@ -26,7 +29,10 @@ user:User;
 
   addToMyCart()
   {
-    //this.bookService.addBookToMyCart(this.book)
+   
+    //search book
+
+    this.bookService.addBookToMyCart(this.book);
   }
 
 

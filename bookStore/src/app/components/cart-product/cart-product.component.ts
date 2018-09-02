@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BookStoreService } from '../../shared/services/book-store.service';
+import { VolumeInfo } from '../../shared/models/volum-info.model';
 
 @Component({
   selector: 'app-cart-product',
@@ -7,7 +8,7 @@ import { BookStoreService } from '../../shared/services/book-store.service';
   styleUrls: ['./cart-product.component.css']
 })
 export class CartProductComponent implements OnInit {
-@Input()  book:string;
+@Input()  book:VolumeInfo;
   constructor(public bookService:BookStoreService) { }
 
   ngOnInit() {
@@ -16,7 +17,7 @@ export class CartProductComponent implements OnInit {
 
   removeBookMyCart()
   {
-this.bookService.removeBookFromMyCart(this.book)
+//this.bookService.removeBookFromMyCart(this.book)
   }
 
 }

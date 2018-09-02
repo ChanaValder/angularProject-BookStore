@@ -3,6 +3,7 @@ import { FormGroup, FormControl, ValidatorFn } from '@angular/forms';
 import { User } from '../../shared/models/User.model';
 import { BookStoreService } from '../../shared/services/book-store.service';
 import { UserService } from '../../shared/services/user.service';
+import { Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -21,7 +22,8 @@ export class RegisterComponent implements OnInit {
    obj: typeof Object = Object;
  
    //----------------CONSTRUCTOR------------------
-   constructor(public userService:UserService) {
+   constructor(public userService:UserService,
+  public router:Router) {
      let formGroupConfig = {
       firstName: new FormControl("", this.createValidatorArr("firstName", 2, 15,/^[A-Za-z]+$/)),
        lastName: new FormControl("", this.createValidatorArr("lastName", 2, 15,/^[A-Za-z]+$/)),
@@ -36,6 +38,7 @@ export class RegisterComponent implements OnInit {
    submitRegister() {
      let person: User = this.formGroup.value;
      this.userService.registerUser(person);
+     this.router.navigate(['/home']);
    }
  
  

@@ -29,7 +29,7 @@ const appRoutes: Routes = [
   ] },
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'productsDetails/:booktitle', component: ProductDetailsComponent},
+  { path: 'productsDetails/:book', component: ProductDetailsComponent},
   { path: 'products', component: ProductsComponent },
   { path: 'myCart', component: CartComponent },
  

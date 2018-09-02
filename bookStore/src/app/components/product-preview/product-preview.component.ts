@@ -17,9 +17,9 @@ export class ProductPreviewComponent implements OnInit {
   ngOnInit() {
     console.log(this.book)
   }
-  bookDetails(booktitle:string)
+  bookDetails()
   {
-    this.router.navigate(['/productsDetails',booktitle ]);
+    this.router.navigate(['/productsDetails',this.book.title ]);
   }
 
 }

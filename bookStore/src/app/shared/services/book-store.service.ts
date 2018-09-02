@@ -5,6 +5,7 @@ import { Observable, Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { error } from '../../../../node_modules/protractor';
 import { Book } from '../models/book.model';
+import { VolumeInfo } from '../models/volum-info.model';
 
 @Injectable({
   providedIn: 'root'
@@ -36,14 +37,14 @@ export class BookStoreService {
    {
     localStorage.clear();
    }
-   removeBookFromMyCart(book:Book)
+   removeBookFromMyCart(book:VolumeInfo)
    {
     let bookList:any = this.getMyCart();
     //bookList.splice(bookList.findIndex(x=>x.booktitle==book),1);
     localStorage.setItem("taskList", JSON.stringify(bookList));;
    }
 
-   addBookToMyCart(book:Book)
+   addBookToMyCart(book:VolumeInfo)
    {
     let bookList = this.getMyCart();
     bookList.push(book);
