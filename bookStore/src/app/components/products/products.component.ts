@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../../shared/models/book.model';
+import { BookStoreService } from '../../shared/services/book-store.service';
 
 @Component({
   selector: 'app-products',
@@ -7,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
-  bookList:book[];
+  constructor(private bookStoreService:BookStoreService) { }
+  bookList:Book[];
   ngOnInit() {
-   this.bookList
+   this.bookList.
   }
 
 }
