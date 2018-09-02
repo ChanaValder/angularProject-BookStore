@@ -28,6 +28,7 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent },// url: about/item
   ] },
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'productsDetails/:booktitle', component: ProductDetailsComponent},
   { path: 'products', component: ProductsComponent },
   { path: 'myCart', component: CartComponent },

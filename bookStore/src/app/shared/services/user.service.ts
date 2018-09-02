@@ -9,21 +9,16 @@ import { error } from '../../../../node_modules/protractor';
   providedIn: 'root'
 })
 export class UserService {
-  adressStore: Adress
   user: User;
-
-
   basicURL: string = "http://localhost:3500/api";
   subject = new Subject();
   constructor(public httpClient: HttpClient) {
     this.user = null;
-    this.adressStore = new Adress("Hirsh", 15, "Bnei-Brak");
   }
 
   login(user): void {
     this.httpClient.post(this.basicURL + "/login", user).subscribe(
       (res) => {
-      
         localStorage.setItem("user", JSON.stringify(res));
         this.subject.next(this.checkUserLogin());
         this.user = res;
@@ -38,7 +33,7 @@ export class UserService {
     let url: string = this.basicURL + "/register";
     this.httpClient.post(url, newUser).subscribe(res => {
       localStorage.setItem('user', JSON.stringify(res));
-      console.log("good");
+      this.subject.next(this.checkUserLogin());
     },
       err => {
         alert("error");
@@ -51,6 +46,7 @@ export class UserService {
 
   logout() {
     localStorage.clear();
+    this.subject.next(this.checkUserLogin());
   }
 
 }

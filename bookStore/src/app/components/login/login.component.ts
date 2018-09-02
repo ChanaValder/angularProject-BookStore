@@ -22,25 +22,19 @@ export class LoginComponent  {
       userName: new FormControl("", this.createValidatorArr("name", 3, 15,/^[A-Za-z]+$/)),
       userPassword: new FormControl("", this.createValidatorArr("password", 5, 10))
     };
-
     this.formGroup = new FormGroup(formGroupConfig);
-
-
   }
         
 
   //----------------METHODS-------------------
   submitLogin() {
     if (this.formGroup.invalid) {
-
       return;
     }
      else{ 
-       console.log("ok");
       this.user=this.formGroup.value;
       this.userService.login(this.user);
     }
-   
   }
 
 
@@ -50,7 +44,6 @@ export class LoginComponent  {
       f =>pattern&&f.value && !f.value.match(pattern)  ? { "val": `${cntName} is contains only English letters` } : null,
       f => f.value && f.value.length > max ? { "val": `${cntName} is max ${max} chars` } : null,
       f => f.value && f.value.length < min ? { "val": `${cntName} is min ${min} chars` } : null
-     
     ];
   }
 }

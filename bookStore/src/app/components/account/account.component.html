@@ -1,17 +1,8 @@
-<!-- <nav>
-  <a [routerLink]="['/login']" routerLinkActive="active">login</a>
-  <a [routerLink]="['myAccount/register']" routerLinkActive="active">register</a>
-  <a [routerLink]="['myAccount/login']" routerLinkActive="active">logout</a>
-</nav>
 
-
-<div class="inner-outlet">
-  <router-outlet></router-outlet>
-</div> -->
-
-<h2>About</h2>
+<h2>myAccount</h2>
 <a [routerLink]="['/myAccount/login']">login</a>
 <a [routerLink]="['/myAccount/register']">register</a>
+<a [routerLink]="['/home']" (click)="logout()">logout</a>
 <div class="inner-outlet">
   <router-outlet></router-outlet>
 </div> 
