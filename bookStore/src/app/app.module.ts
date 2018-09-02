@@ -12,9 +12,10 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-import{BookStoreService} from '././shared/services/book-store.service'
+import { BookStoreService } from '././shared/services/book-store.service'
 import { registerContentQuery } from '../../node_modules/@angular/core/src/render3/instructions';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+<<<<<<< HEAD
 
 const appRoutes: Routes = [
   { path: 'bookStore/home', component:HomeComponent  },
@@ -30,6 +31,18 @@ const appRoutes: Routes = [
   { path: 'bookStore/myAccount/register', component: RegisterComponent } ,// url: about/item
   { path: 'bookStore/products', component:ProductsComponent  },
  { path: 'bookStore/myCart', component:CartComponent  },
+=======
+const appRoutes: Routes = [
+  { path: 'bookStore/home', component: HomeComponent },
+  { path: 'bookStore/myAccount', component: AccountComponent },
+  { path: '', component: HomeComponent },
+  { path: 'bookStore', component: HomeComponent },
+  { path: 'bookStore/myAccount', component: AccountComponent },
+  { path: 'bookStore/myAccount/login', component: LoginComponent }, // url: about/
+  { path: 'bookStore/myAccount/register', component: RegisterComponent },// url: about/item
+  { path: 'bookStore/products', component: ProductsComponent },
+  { path: 'bookStore/myCart', component: CartComponent },
+>>>>>>> 75f143f0dadaf58ce3f73bef804a2eb62098109a
 
 ];
 
@@ -49,11 +62,15 @@ const appRoutes: Routes = [
     RegisterComponent
   ],
   imports: [
+<<<<<<< HEAD
     BrowserModule, 
      RouterModule.forRoot( appRoutes ),
      ReactiveFormsModule, 
     FormsModule,],
 
+=======
+    BrowserModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule, FormsModule],
+>>>>>>> 75f143f0dadaf58ce3f73bef804a2eb62098109a
   providers: [BookStoreService],
   bootstrap: [AppComponent]
 })
