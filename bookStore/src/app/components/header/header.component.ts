@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import{User} from '../../shared/models/User.model'
+import{BookStoreService} from '../../shared/services/book-store.service'
 
 @Component({
   selector: 'app-header',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  user:User;
+  constructor(private bookStoreService:BookStoreService) {
+    this.user=this.bookStoreService.user;
+   }
 
   ngOnInit() {
+  
   }
 
 }

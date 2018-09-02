@@ -12,11 +12,11 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import{BookStoreService} from '././shared/services/book-store.service'
 
 const appRoutes: Routes = [
   { path: 'bookStore/home', component:HomeComponent  },
   { path: 'bookStore/home/login', component:LoginComponent  },
-<<<<<<< HEAD
   { path: 'bookStore/home/login', component:RegisterComponent  },
   { path: 'bookStore/myAccount', component:AccountComponent  },
   { path: 'bookStore/products', component:ProductsComponent  },
@@ -24,10 +24,6 @@ const appRoutes: Routes = [
  
 
  
-=======
-  { path: 'bookStore/home/register', component:RegisterComponent  }
-  { path: 'bookStore/home/productDetails/:id',component: ProductDetailsComponent },
->>>>>>> e6be54d6dfbdbac404c56472ba48c2e5f6c3e526
 ];
 
 
@@ -47,7 +43,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,  RouterModule.forRoot( appRoutes )],
-  providers: [],
+  providers: [BookStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
