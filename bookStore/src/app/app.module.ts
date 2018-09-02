@@ -13,24 +13,19 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import{BookStoreService} from '././shared/services/book-store.service'
+import { registerContentQuery } from '../../node_modules/@angular/core/src/render3/instructions';
 
 const appRoutes: Routes = [
-  { path: 'bookStore/home', component:HomeComponent  },
-  { path: 'bookStore/home/login', component:LoginComponent  },
-<<<<<<< HEAD
-  { path: 'bookStore/home/register', component:RegisterComponent  },
-  { path: 'bookStore/home/login', component:RegisterComponent  },
-  { path: 'bookStore/myAccount', component:AccountComponent  },
-=======
-  { path: 'bookStore/myAccount', component:AccountComponent ,
-    children: [
-      {path: 'myAccount/login',component: LoginComponent,outlet:"account" },
-      {path:'myAccount/register',component:RegisterComponent,outlet:"account"},
-      ]},
->>>>>>> 8c3496f1dcb345081b676431b72db6391a677033
+  { path: '', component:HomeComponent },
+   { path: 'bookStore', component:HomeComponent },
+  
+   {path: 'bookStore/myAccount',
+    component: AccountComponent,
+},
+  { path: 'bookStore/myAccount/login', component: LoginComponent }, // url: about/
+  { path: 'bookStore/myAccount/register', component: RegisterComponent } ,// url: about/item
   { path: 'bookStore/products', component:ProductsComponent  },
-  { path: 'bookStore/myCart', component:CartComponent  },
-  { path: 'bookStore/home/productDetails/:id',component: ProductDetailsComponent },
+ { path: 'bookStore/myCart', component:CartComponent  },
 
 ];
 
