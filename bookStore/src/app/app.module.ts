@@ -11,9 +11,13 @@ import { HomeComponent } from './components/home/home.component';
 import { AccountComponent } from './components/account/account.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component:HomeComponent  },
+  { path: 'bookStore/home', component:HomeComponent  },
+  { path: 'bookStore/home/login', component:LoginComponent  },
+  { path: 'bookStore/home/login', component:RegisterComponent  }
  
 ];
 
@@ -28,7 +32,9 @@ const appRoutes: Routes = [
     HomeComponent,
     AccountComponent,
     CartComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,  RouterModule.forRoot( appRoutes )],
