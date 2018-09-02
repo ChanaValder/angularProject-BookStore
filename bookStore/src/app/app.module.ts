@@ -16,6 +16,7 @@ import { BookStoreService } from '././shared/services/book-store.service'
 import { registerContentQuery } from '../../node_modules/@angular/core/src/render3/instructions';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { ProductPreviewComponent } from './product-preview/product-preview.component';
 
 
 
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     CartComponent,
     ProductDetailsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductPreviewComponent
   ],
   imports: [
     BrowserModule, 

@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   constructor() { }
-
+  bookList:book[];
   ngOnInit() {
+   this.bookList
   }
 
 }
