@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Adress } from '../../shared/models/Adress.model';
+import { BookStoreService } from '../../shared/services/book-store.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public bookStoreService:BookStoreService) { }
+adressStore:Adress
   ngOnInit() {
+    this.adressStore=this.bookStoreService.adressStore;
   }
 
 }
