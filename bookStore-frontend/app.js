@@ -60,11 +60,10 @@ app.post("/api/register", (req, res) => {
     else res.status(400).send();
 })
 
-
- app.get("/api/getList", (req, res) => {
-     let correntList = require("./book.json");
-     res.status(201).send(JSON.stringify(correntList));
- })
+//  app.get("/api/getList", (req, res) => {
+//      let correntList = require("./book.json");
+//      res.status(201).send(JSON.stringify(correntList));
+//  })
 
 app.post("/api/login", (req, res) => {
     let correntList = require("./user.json");
