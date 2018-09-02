@@ -3,5 +3,5 @@
   <h1>book title:{{book["volumeInfo"]["title"]}}</h1>
   <h3>book sub title:{{book["volumeInfo"]["subtitle"]}}</h3>
    <img [src]='book["volumeInfo"]["imageLinks"]["thumbnail"]'> 
-  <button value="book details" onclick="bookDetails()"></button>
+  <button value="book details" (click)="bookDetails(book['volumeInfo']['title'])"></button>
 </div>
