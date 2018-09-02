@@ -17,6 +17,7 @@ import { registerContentQuery } from '../../node_modules/@angular/core/src/rende
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { ProductPreviewComponent } from './product-preview/product-preview.component';
+import { UserService } from './shared/services/user.service';
 
 
 
@@ -57,7 +58,7 @@ const appRoutes: Routes = [
      ReactiveFormsModule, 
     HttpClientModule,
     FormsModule,],
-  providers: [BookStoreService],
+  providers: [BookStoreService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

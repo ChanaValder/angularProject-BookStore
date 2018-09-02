@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl, ValidatorFn } from '@angular/forms';
 import{BookStoreService} from '../../shared/services/book-store.service'
 import { User } from '../../shared/models/User.model';
+import { UserService } from '../../shared/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent  {
   obj: typeof Object = Object;
   user:User;
   //----------------CONSTRUCTOR------------------
-  constructor( private bookStoreService:BookStoreService) {
+  constructor( private userService:UserService) {
     let formGroupConfig = {
       userName: new FormControl("", this.createValidatorArr("name", 3, 15,/^[A-Za-z]+$/)),
       userPassword: new FormControl("", this.createValidatorArr("password", 5, 10))
@@ -33,7 +34,7 @@ export class LoginComponent  {
     }
      else{ 
       this.user=this.formGroup.value;
-      this.bookStoreService.login(this.user);
+      this.userService.login(this.user);
     }
    
   }
