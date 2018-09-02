@@ -69,9 +69,13 @@ app.post("/api/register", (req, res) => {
 app.get("/api/login", (req, res) => {
     let correntList = require("./user.json");
     let allUser=JSON.stringify(correntList);
-    allUser.filter(p=>{p.userName==req.body.userName&&req.body.password==p.password})
-    if(allUser)
-     res.status(201).send(allUser);
+    let user=null;
+    console.log(allUser);
+    var date=JSON.parse(allUser,(value)=>{if(value.userName==req.body.userName&&value.password==req.body.password)
+    user=value;
+    })
+    if(user)
+   res.status(201).send(value);
     else res.status(400).send();
 })
 const port = process.env.PORT || 3500;
