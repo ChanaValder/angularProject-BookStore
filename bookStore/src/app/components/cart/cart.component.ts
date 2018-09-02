@@ -11,9 +11,13 @@ export class CartComponent implements OnInit {
   constructor(public bookService:BookStoreService) { }
 
   ngOnInit() {
+<<<<<<< HEAD
   this.bookService.getMyCart().subscribe(data=>{
   this.myCartBook=data;
 })
+=======
+    this.myCartBook= this.bookService.getMyCart();
+>>>>>>> 0168d91d5815b919fcde0c2b152cd053dd889a2f
 
   }
 

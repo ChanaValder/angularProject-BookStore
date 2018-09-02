@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { VolumeInfo } from '../shared/models/volum-info.model';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product-preview',
@@ -8,15 +9,16 @@ import { VolumeInfo } from '../shared/models/volum-info.model';
 })
 export class ProductPreviewComponent implements OnInit {
 
-  constructor() { }
+  constructor( private route: ActivatedRoute,
+    private router: Router) { }
 @Input()
   book:VolumeInfo;  
   ngOnInit() {
-    console.log(this.book["volumeInfo"]["title"])
+    console.log(this.book.title)
   }
   bookDetails()
   {
-
+    this.router.navigate(['/productsDetails',this.book.title ]);
   }
 
 }
