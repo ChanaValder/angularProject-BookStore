@@ -1,0 +1,662 @@
+{
+    "items": [
+        {
+            "volumeInfo": {
+                "title": "A History of Russian Music",
+                "subtitle": "From Kamarinskaya to Babi Yar",
+                "authors": [
+                    "Francis Maes"
+                ],
+                "publisher": "Univ of California Press",
+                "publishedDate": "2002",
+                "description": "A comprehensive re-evaluation of Russian music retraces a rich history that includes composers such as Tchaikovsky, Mussorgsky, and Stravinsky, among many others.",
+                "pageCount": 427,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=SqWcR336iW0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=SqWcR336iW0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Hebrew reader",
+                "subtitle": "or, A new and practical system for the acquisition of the Hebrew language",
+                "authors": [
+                    "Eli Noyes"
+                ],
+                "publishedDate": "1846",
+                "pageCount": 204,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=8R5IAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=8R5IAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Manual Hebrew and English Lexicon, Including the Biblical Chaldee",
+                "subtitle": "Designed Particularly for Beginners",
+                "authors": [
+                    "Josiah Willard Gibbs"
+                ],
+                "publishedDate": "1828",
+                "pageCount": 210,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=fug5AQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=fug5AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Manual Hebrew and English Lexicon",
+                "subtitle": "Including the Biblical Chaldee. Designed Particularly for Beginners",
+                "authors": [
+                    "Josiah Willard Gibbs"
+                ],
+                "publishedDate": "1832",
+                "pageCount": 236,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=uUpAAQAAIAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=uUpAAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A New and Easy Method of Learning Hebrew Without Points",
+                "subtitle": "To which is Annex'd, by Way of Praxis, The Book of Proverbs, Divided According to the Metre: with the Masoretical Reading in Roman Letters, the Interlinear Version of Santes Pagninus, &c. A Grammatical Analysis, and Short Notes Critical and Explanatory ...",
+                "authors": [
+                    "Richard Grey"
+                ],
+                "publishedDate": "1738",
+                "pageCount": 246,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=6UlWAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=6UlWAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A' Sido nyelv Kezdetei. (Anfangsgründe der hebräischen Sprache.)- Buda Egyet nyomda 1832",
+                "authors": [
+                    "Friedrich-Heinrich-Wilhelm Gesenius"
+                ],
+                "publishedDate": "1832",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=zMZJAAAAcAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=zMZJAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A complete Hebrew and English critical and pronouncing dictionary",
+                "subtitle": "on a new and improved plan, containing all the words in the Holy Bible, both Hebrew and Chaldee",
+                "authors": [
+                    "William L. Roy"
+                ],
+                "publishedDate": "1837",
+                "pageCount": 732,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=3c85AQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=3c85AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Pirke avot (Sprüche der Väter) vagy a régi rabbik' erkölcstudománya rapsodiai oktató mondatokban. (hebr. et hung.)",
+                "authors": [
+                    "Móric Rosenthal"
+                ],
+                "publishedDate": "1841",
+                "pageCount": 80,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=J8xWAAAAcAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=J8xWAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Venice",
+                "subtitle": "A Documentary History, 1450-1630",
+                "authors": [
+                    "David Sanderson Chambers",
+                    "Jennifer Fletcher",
+                    "Brian S. Pullan",
+                    "Renaissance Society of America"
+                ],
+                "publisher": "University of Toronto Press",
+                "publishedDate": "2001",
+                "description": "This work presents important sources ? many previously unpublished in any language, and almost none previously available in English ? for the history of the city-state of Venice from its zenith to its decline.",
+                "pageCount": 484,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ZaHt76Uk2m8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ZaHt76Uk2m8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Hebrew and English Dictionary",
+                "subtitle": "Containing All the Hebrew and Chaldee Words Used in the Old Testament, Arranged Under One Alphabet ... with Vocabularies of All the Roots with Their Significations, and the Principal English Words with Their Corresponding Words in Hebrew",
+                "authors": [
+                    "Joseph Samuel Christian Frederick Frey"
+                ],
+                "publishedDate": "1839",
+                "pageCount": 349,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=VypIAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=VypIAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Bollywood",
+                "subtitle": "A Guidebook to Popular Hindi Cinema",
+                "authors": [
+                    "Tejaswini Ganti"
+                ],
+                "publisher": "Psychology Press",
+                "publishedDate": "2004",
+                "description": "'Bollywood' is the dominant global term to refer to the prolific Hindi language film industry in Bombay (renamed Mumbai in 1995). Characterised by music, dance routines, melodrama, lavish production values and an emphasis on stars and spectacle, Bollywood films have met with box-office success and enthusiastic audiences from India to West Africa to Russia, and throughout the English-speaking world. In Bollywood, anthropologist and film scholar Tejaswini Ganti provides a guide to the cultural, social and political significance of Hindi cinema, outlining the history and structure of the Bombay film industry, and the development of popular Hindi filmmaking since the 1930s. Providing information and commentary on the key players in Bollywood, including directors and stars, as well as material from current filmmakers themselves, the areas covered in Bollywood include: history of Indian cinema narrative style, main themes, and key genres of Hindi cinema significant films, directors and stars production and distribution of Bollywood films interviews with actors, directors and screenwriters.",
+                "pageCount": 254,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=GTEa93azj9EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=GTEa93azj9EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "It's Only a Play",
+                "subtitle": "A Comedy",
+                "authors": [
+                    "Terrence McNally"
+                ],
+                "publisher": "Dramatists Play Service Inc",
+                "publishedDate": "1992",
+                "description": "THE STORY: It's the opening night of The Golden Egg on Broadway, and the wealthy producer (Julia Budder) is throwing a lavish party in her lavish Manhattan townhouse. Downstairs the celebrities are pouring in, but the real action is upstairs",
+                "pageCount": 81,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=7Q9Aa2V0lAIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=7Q9Aa2V0lAIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A collection of poems, by several hands [ed. by R. Dodsley]. [2 other copies of vols. 5,6].",
+                "authors": [
+                    "Collection"
+                ],
+                "publishedDate": "1766",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=sNgIAAAAQAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=sNgIAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Tag",
+                "subtitle": "a novel",
+                "authors": [
+                    "Barry Heard"
+                ],
+                "publisher": "Scribe Publications",
+                "publishedDate": "2009-06-01",
+                "description": "As a lad in the high country of eastern Victoria, Tag Wardell shows an extraordinary gift with animals - his rapport with his horse becomes the talk of the district. 1914 brings war and Tag and his mates join the Light Horse regiment. On the convoy to Egypt, he is singled out to help the distressed horses. Later, on leave in Cairo he meets Jill, a nurse, but their brief romance is cut short as Gallipoli looms. Tag's life spirals into one of survival in the day-to-day madness of the trenches.",
+                "pageCount": 384,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=hEgKeXuuoGwC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=hEgKeXuuoGwC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "ספר על אוכל",
+                "subtitle": "",
+                "publishedDate": "2015",
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Kipling",
+                "subtitle": "a selection of his stories and poems",
+                "authors": [
+                    "Rudyard Kipling"
+                ],
+                "publishedDate": "1956",
+                "description": "The two-volume selection includes the text of Kim and the Jungle Book collection",
+                "pageCount": 505,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=KfZaAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=KfZaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Pilates for a Flat Stomach: Perfect Abs in Just 15 Minutes a Day",
+                "authors": [
+                    "Anna Selby"
+                ],
+                "publisher": "HarperCollins UK",
+                "publishedDate": "2011-10-10",
+                "description": "Just 15 minutes a day will work wonders to give you the flat stomach you’ve always wanted!",
+                "pageCount": 160,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=MUF9IlFyuKEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=MUF9IlFyuKEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            },
+            "saleInfo": {
+                "listPrice": {
+                    "amount": 37,
+                    "currencyCode": "ILS"
+                }
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A History of Long Island",
+                "subtitle": "From Its First Settlement by Europeans to the Year 1845, with Special Reference to Its Ecclesiastical Concerns ...",
+                "authors": [
+                    "Nathaniel Scudder Prime"
+                ],
+                "publishedDate": "1845",
+                "pageCount": 420,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=elEOAAAAIAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=elEOAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Stolen Life",
+                "subtitle": "Searching for Richard Pierpoint",
+                "authors": [
+                    "David Meyler",
+                    "Peter Meyler"
+                ],
+                "publisher": "Dundurn",
+                "publishedDate": "1999-11-15",
+                "description": "Richard Pierpoint or Captain Dick, as he was commonly known, emerges from the shadows of history in A Stolen Life: Searching for Richard Pierpoint. An African warrior who was captured at about age 16, Pierpoint lived his remaining years in exile. From his birth in Bundu (now part of Senegal) around 1744 until his death in rural Ontario in 1837, Pierpoint’s life allows us to glimpse the activity of an African involved in some of the world’s great events. \"We are indebted to the authors for breathing life into this man, who though taken from his home early in his life still was able to make a significant contribution to the early history of Upper Canada. He fought, farmed and became a giant to the Black community. We thank you for a wonderful story of this often forgotten segment of Canadian history.\" — Wilma Morrison, Norval Johnson Heritage Library, Niagara Falls \"Everybody knows about the Underground Railroad and the great many Black souls who emigrated to Canada via this route, but very few people know the brave Black men and women who put their lives on the line in defence of this country.\" — Ivor Christopher, Re-enactor, Runchey’s Company of Coloured Men \"A well-researched and highly readable chronicle of Richard Pierpoint’s life in Africa and North America — as a slave, a soldier, and as a pioneer in Upper Canada’s wilderness. ... a vitally important contribution to Canadian Black history.\" — Linda Brown-Kubisch, Author, Missouri",
+                "pageCount": 144,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=VShv-eGkLnEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=VShv-eGkLnEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            },
+            "saleInfo": {
+                "listPrice": {
+                    "amount": 31,
+                    "currencyCode": "ILS"
+                }
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "קיצור תולדות האנושות",
+                "publishedDate": "2013",
+                "pageCount": 459,
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Complete Collection of State Trials and Proceedings for High Treason and Other Crimes and Misdemeanors from the Earliest Period to the Year 1820. (etc.)",
+                "authors": [
+                    "Thomas Bayly Howell"
+                ],
+                "publishedDate": "1824",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=yk5TAAAAcAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=yk5TAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Citizenship and Identity",
+                "subtitle": "Towards a New Republic",
+                "authors": [
+                    "John Schwarzmantel"
+                ],
+                "publisher": "Routledge",
+                "publishedDate": "2003-08-29",
+                "description": "Citizenship and Identity offers an analysis of contemporary politics and of the scepticism and apathy which characterise the political life of modern democracies. Starting from exploration of liberal-democracy and a critique of the fragmentation of contemporary politics, this book develops a republican perspective as an alternative framework for political institutions and civic participation.",
+                "pageCount": 200,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=_pGBAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=_pGBAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            },
+            "saleInfo": {
+                "listPrice": {
+                    "amount": 211,
+                    "currencyCode": "ILS"
+                }
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Scanner Darkly",
+                "authors": [
+                    "Philip K. Dick"
+                ],
+                "publishedDate": "2012",
+                "description": "Substance D - otherwise known as Death - is the most dangerous drug ever to find its way on to the black market. It destroys the links between the brain's two hemispheres, leading first to disorentation and then to complete and irreversible brain damage. Bob Arctor, undercover narcotics agent, is trying to find a lead to the source of supply, but to pass as an addict he must become a user, and soon, without knowing what is happening to him, he is as dependent as any of the addicts he is monitoring.",
+                "pageCount": 217,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=G1ZtzgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=G1ZtzgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "הטחנה על הנהר פלוס",
+                "authors": [
+                    "George Eliot"
+                ],
+                "publishedDate": "1998",
+                "pageCount": 505,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=pncVfwO1ZqoC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=pncVfwO1ZqoC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "iw"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Matter of Principle",
+                "authors": [
+                    "Susan Beth Pfeffer"
+                ],
+                "publisher": "Dell Pub Co",
+                "publishedDate": "1983-05",
+                "description": "When Becca Holz and her friends publish an underground newspaper which contains cruel cartoons of their high-school principal and their history teacher they run into difficulties.",
+                "pageCount": 181,
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Matter of Principle",
+                "authors": [
+                    "Conrad Black"
+                ],
+                "publisher": "McClelland & Stewart",
+                "publishedDate": "2011-08-31",
+                "description": "\"I never ask for mercy and seek no one's sympathy. I would never, as was once needlessly feared in this court, be a fugitive from justice in this country, only a seeker of it.\" —Conrad Black, in his statement to the court, June 24, 2011 In 1993, Conrad Black was the proprietor of London's Daily Telegraph and the head of one of the world's largest newspaper groups. He completed a memoir in 1992, A Life in Progress, and \"great prospects beckoned.\" In 2004, he was fired as chairman of Hollinger International after he and his associates were accused of fraud. Here, for the first time, Black describes his indictment, four-month trial in Chicago, partial conviction, imprisonment, and largely successful appeal. In this unflinchingly revealing and superbly written memoir, Black writes without reserve about the prosecutors who mounted a campaign to destroy him and the journalists who presumed he was guilty. Fascinating people fill these pages, from prime ministers and presidents to the social, legal, and media elite, among them: Margaret Thatcher, Tony Blair, George W. Bush, Jean Chrétien, Rupert Murdoch, Izzy Asper, Richard Perle, Norman Podhoretz, Eddie Greenspan, Alan Dershowitz, and Henry Kissinger. Woven throughout are Black's views on big themes: politics, corporate governance, and the U.S. justice system. He is candid about highly personal subjects, including his friendships - with those who have supported and those who have betrayed him - his Roman Catholic faith, and his marriage to Barbara Amiel. And he writes about his complex relations with Canada, Great Britain, and the United States, and in particular the blow he has suffered at the hands of that nation. In this extraordinary book, Black maintains his innocence and recounts what he describes as \"the fight of and for my life.\" A Matter of Principle is a riveting memoir and a scathing account of a flawed justice system. From the Hardcover edition.",
+                "pageCount": 592,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=sdphp5rEW1wC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=sdphp5rEW1wC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Japanese Boy",
+                "authors": [
+                    "Shiukichi Shigemi"
+                ],
+                "publishedDate": "1889",
+                "description": "A Japanese Boy by Himself is an essay written by Shukichi Shigemi when he was a student attending medical school at Yale University in 1889. It was written in English and published by a company in Connecticut, U.S.A. The description of just a common boy's daily life in a countryside contributed to cross-cultural understanding between the two countries at an early stage after the end of the Japanese isolation policy. His book sold well that he could pay for education with this publication to become a qualified doctor.",
+                "pageCount": 128,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=9mIYAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=9mIYAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Billion to One",
+                "subtitle": "An American Insider in the New China",
+                "authors": [
+                    "Gene Ayres"
+                ],
+                "publisher": "World Audience, Inc.",
+                "publishedDate": "2009-02",
+                "description": "Seattle author Gene Ayres recounts his extended stay in China.",
+                "pageCount": 264,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=_pFzl6Ew0jMC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=_pFzl6Ew0jMC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Perinatal Mental Health",
+                "subtitle": "A Clinical Guide",
+                "authors": [
+                    "Colin R. Martin"
+                ],
+                "publisher": "M&k Update",
+                "publishedDate": "2012",
+                "description": "The prospect of parenthood represents a milestone in anyone's life course and is often a period of stress and challenge. There are a number of significant mental health problems that can occur during the perinatal period, the consequences of which can be both enduring and, occasionally, life threatening. However, irrespective of the specifics of the clinical manifestation of a disturbance, the distress and misery that accompanies it has significant ramifications for the mother or mother-to-be and her partner and family. This book is arranged in themed parts that represent key aspects of facilitating access to effective clinical management during the antenatal and postnatal period.",
+                "pageCount": 521,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=S1PzmAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=S1PzmAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "The Nineteenth-century Novel",
+                "subtitle": "A Critical Reader",
+                "authors": [
+                    "Open University"
+                ],
+                "publisher": "Psychology Press",
+                "publishedDate": "2001",
+                "description": "Most undergraduate literature courses begin with a compulsory survey course on the novel. The Nineteenth-Century Novel: A Critical Reader fills a real gap in the market as no other book provides such a comprehensive selection of contemporary and modern essays and reviews on the most important novels of the period. By bringing together a range of material written across two centuries, it offers an insight into the changing reception of realist fiction and a discussion of how complex debates about the meaning and function of realism informed and shaped the kind of fiction that was written in the nineteenth century. The novels discussed are: Northanger Abbey, Jane Eyre, Dombey and Son, Middlemarch, Far From the Madding Crowd, Germinal, Madame Bovary, The Woman in White, The Portrait of a Lady, The Awakening, Dracula, Heart of Darkness.",
+                "pageCount": 573,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=EQMKAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=EQMKAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "The Power of Problem-based Learning",
+                "subtitle": "A Practical \"how To\" for Teaching Undergraduate Courses in Any Discipline",
+                "authors": [
+                    "Barbara J. Duch",
+                    "Susan E. Groh",
+                    "Deborah E. Allen"
+                ],
+                "publisher": "Stylus Publishing (VA)",
+                "publishedDate": "2001-01-01",
+                "description": "Problem-based learning is a powerful classroom process, which uses real world problems to motivate students to identify and apply research concepts and information, work collaboratively and communicate effectively. It is a strategy that promotes life-long habits of learning.The University of Delaware is recognized internationally as a center of excellence in the use and development of PBL. This book presents the cumulative knowledge and practical experience acquired over nearly a decade of integrating PBL in courses in a wide range of disciplines.This \"how to\" book for college and university faculty. It focuses on the practical questions which anyone wishing to embark on PBL will want to know: \"Where do I start?\"???\"How do you find problems?\"???\"What do I need to know about managing groups?\"???\"How do you grade in a PBL course?\"The book opens by outlining how the PBL program was developed at the University of Delaware--covering such issues as faculty mentoring and institutional support--to offer a model for implementation for other institutions.The authors then address the practical questions involved in course transformation and planning for effective problem-based instruction, including writing problems, using the Internet, strategies for using groups, the use of peer tutors and assessment. They conclude with case studies from a variety of disciplines, including biochemistry, pre-law, physics, nursing, chemistry, political science and teacher educationThis introduction for faculty, department chairs and faculty developers will assist them to successfully harness this powerful process to improve learning outcomes.",
+                "pageCount": 274,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=54CwDAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=54CwDAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "What Does a Woman Want?",
+                "authors": [
+                    "Serge André"
+                ],
+                "publisher": "Other PressLlc",
+                "publishedDate": "1999",
+                "description": "In his comparison of Freud and Lacan, Andre illuminates the forward evolution of Freud's thinking on feminine sexuality and the ways in which Lacan traces his own path backward from the later Freud to the earlier theories, finding there the basis for his notion of the difference between phallic jouissance and the \"feminine\" jouissance of the Other as guaranteeing the impossibility of the sexual relation.",
+                "pageCount": 350,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=cnBKhtfCCOkC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=cnBKhtfCCOkC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Becoming a Citizen",
+                "authors": [
+                    "Sarah De Capua"
+                ],
+                "publisher": "Childrens Press",
+                "publishedDate": "2002",
+                "description": "Discusses the requirements for becoming an American citizen and the steps involved in the naturalization process.",
+                "pageCount": 47,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=DnNLPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=DnNLPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Bed for the Night",
+                "subtitle": "Humanitarianism in Crisis",
+                "authors": [
+                    "David Rieff"
+                ],
+                "publisher": "Random House",
+                "publishedDate": "2002",
+                "description": "\"Drawing on first hand reporting from hot war zones around the world - Bosnia, Rwanda, Congo, Kosovo, Sudan and most recently, Afghanistan - David Rieff shows us what humanitarian aid workers do in the field and the growing gap between their noble ambitions and their actual capabilities for alleviating suffering. Tracing the origins of major humanitarian organizatins such as the International Commitee of the Red Cross, Medecins San Frontieres, and CARE, he describes how many of them have moved from their founding principles of neutrality - which gave them access to victims - to encouraging the international community to take action to stop civil wars and ethnic cleansing. ieff demonstrates how this advocacy has come at a high price. By overreaching, the humanitarian movement has allowed itself to be hijacked by the major powers, sometimes to become a fig leaf for actions that major powers take in their own national interests, as in Afghanistan, sometimes for their inaction, as in Bosnia and Rwanda. With an exception of cases of genocide, where the moral imperative to act overrides all other considerations, Rieff contends that if humanitarian organizations are to continue doing",
+                "pageCount": 367,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=FUnBHMxz8r4C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=FUnBHMxz8r4C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "The Stations of the Sun",
+                "subtitle": "A History of the Ritual Year in Britain",
+                "authors": [
+                    "Ronald Hutton"
+                ],
+                "publisher": "Oxford University Press, USA",
+                "publishedDate": "2001",
+                "description": "Comprehensive and engaging, this colourful study covers the whole sweep of ritual history from the earliest written records to the present day. From May Day revels and Midsummer fires, to Harvest Home and Hallowe'en, to the twelve days of Christmas, Ronald Hutton takes us on a fascinating journey through the ritual year in Britain. He challenges many common assumptions about the customs of the past, and debunks many myths surrounding festivals of the present, to illuminate the history of the calendar year we live by today.",
+                "pageCount": 542,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=H3PvQ5bqoBkC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=H3PvQ5bqoBkC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Women & Music",
+                "subtitle": "A History",
+                "authors": [
+                    "Karin Pendle"
+                ],
+                "publishedDate": "2001",
+                "description": "This updated, expanded, and reorganized edition of Women and Music features even more women composers, performers, and patrons, even more musical contexts, and an expanded view of women in music outside Europe and North America. A popular university textbook, Women and Music is enlightening for scholars, a good source of programming ideas for performers, and a pleasure for other music lovers.",
+                "pageCount": 516,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=0twgmQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=0twgmQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A System of Logic, Ratiocinative and Inductive",
+                "subtitle": "Being a Connected View of the Principles of Evidence and the Methods of Scientific Investigation",
+                "authors": [
+                    "John Stuart Mill"
+                ],
+                "publishedDate": "1862",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=kDMCAAAAQAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=kDMCAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A History of Ireland",
+                "subtitle": "From the Earliest Period, to the Present Time. In a Series of Letters, Addressed to William Hamilton,esq",
+                "authors": [
+                    "William Crawford"
+                ],
+                "publishedDate": "1783",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ohwvAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ohwvAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "Planting a Rainbow",
+                "authors": [
+                    "Lois Ehlert"
+                ],
+                "publisher": "Houghton Mifflin Harcourt",
+                "publishedDate": "1988",
+                "description": "A mother and child plant a rainbow of flowers in the family garden.",
+                "pageCount": 22,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=M1gEK7aN7pMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=M1gEK7aN7pMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en"
+            }
+        },
+        {
+            "volumeInfo": {
+                "title": "A Boundary Spectral Method for Elasticity Problems with Spherical ...",
+                "language": "en"
+            }
+        }
+    ]
+}

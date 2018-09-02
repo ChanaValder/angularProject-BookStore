@@ -17,6 +17,7 @@ export class BookStoreService {
   bookList:Book[];
  
   constructor(public httpClient:HttpClient) {
+<<<<<<< HEAD
     
    }
    getBooks():Observable<Book[]>{
@@ -25,6 +26,32 @@ export class BookStoreService {
    }
 
 
+=======
+   }
+   
+   getMyCart()
+   {
+    let listBook = localStorage.getItem("myCart");
+    return (listBook) ? JSON.parse(listBook) : [];
+   }
+
+   clearMyCart()
+   {
+    localStorage.clear();
+   }
+   removeBookFromMyCart()
+   {
+    let bookList = this.getMyCart();
+    bookList.push(book);
+   }
+
+   addBookToMyCart(book:Book)
+   {
+    let bookList = this.getMyCart();
+    bookList.push(book);
+    localStorage.setItem("myCart", JSON.stringify(bookList));
+   }
+>>>>>>> ddc53ea9889dfdaddd9e3316f2438db3899322f2
    
  
 }
