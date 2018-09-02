@@ -12,9 +12,16 @@ export class ProductsComponent implements OnInit {
   constructor(private bookStoreService:BookStoreService) { }
   bookList:Book[];
   ngOnInit() {
-   this.bookStoreService.getBooks().subscribe(res=>{console.log(res["items"][0]);  this.bookList=res["items"]},err=>{alert("error")});
+    this.getBook(""); 
+}
+getBook(keySearch:string)
+{
+  this.bookStoreService.getBooks(keySearch).subscribe(res=>{console.log(res["items"][0]);  this.bookList=res["items"]},err=>{alert("error")});
 
-
+}
+search(keySearch)
+{
+this.getBook(keySearch);
 
 }
 }

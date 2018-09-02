@@ -19,9 +19,10 @@ export class BookStoreService {
   constructor(public httpClient:HttpClient) {
     
    }
-   getBooks():Observable<Book[]>{
+   getBooks(searchKey):Observable<Book[]>{
 
     return this.httpClient.get<Book[]>(this.basicURL+"/getList");
+    // change the link according to the search key
    
    }
    

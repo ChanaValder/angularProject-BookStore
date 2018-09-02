@@ -11,7 +11,7 @@ export class CartComponent implements OnInit {
   constructor(public bookService:BookStoreService) { }
 
   ngOnInit() {
-  this.bookService.getBooks().subscribe(data=>{
+  this.bookService.getMyCart().subscribe(data=>{
   this.myCartBook=data;
 })
 
