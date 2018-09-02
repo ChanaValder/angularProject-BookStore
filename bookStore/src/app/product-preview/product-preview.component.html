@@ -1,7 +1,7 @@
 
 <div>
-  <h1>book title:{{book["volumeInfo"]["title"]}}</h1>
-  <h3>book sub title:{{book["volumeInfo"]["subtitle"]}}</h3>
+  <h1 *ngIf="book['volumeInfo']['title']">book title:{{book["volumeInfo"]["title"]}}</h1>
+  <h3 *ngIf="book['volumeInfo']['subtitle']" >book sub title:{{book["volumeInfo"]["subtitle"]}}</h3>
    <img [src]='book["volumeInfo"]["imageLinks"]["thumbnail"]'> 
   <button value="book details" onclick="bookDetails()"></button>
 </div>
