@@ -15,14 +15,11 @@ import { RegisterComponent } from './components/register/register.component';
 import { BookStoreService } from '././shared/services/book-store.service'
 import { registerContentQuery } from '../../node_modules/@angular/core/src/render3/instructions';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-<<<<<<< HEAD
 import { HttpClientModule } from "@angular/common/http";
 
 
-=======
-import { HttpClientModule } from '@angular/common/http';
 
->>>>>>> bb5697a204588b3c8992ddc9ca07a5eaff948997
+
 const appRoutes: Routes = [
   { path: 'bookStore/home', component: HomeComponent },
   { path: 'bookStore/myAccount', component: AccountComponent },
@@ -33,11 +30,8 @@ const appRoutes: Routes = [
   { path: 'bookStore/myAccount/register', component: RegisterComponent },// url: about/item
   { path: 'bookStore/products', component: ProductsComponent },
   { path: 'bookStore/myCart', component: CartComponent },
-<<<<<<< HEAD
   
 
-=======
->>>>>>> bb5697a204588b3c8992ddc9ca07a5eaff948997
 
 ];
 
@@ -57,19 +51,14 @@ const appRoutes: Routes = [
     RegisterComponent
   ],
   imports: [
-<<<<<<< HEAD
     BrowserModule, 
      RouterModule.forRoot( appRoutes ),
      ReactiveFormsModule, 
-    FormsModule,
-    HttpClientModule],
-
-=======
-    BrowserModule, HttpClientModule,
+    HttpClientModule,
+    BrowserModule,
      RouterModule.forRoot( appRoutes ),
      ReactiveFormsModule, 
     FormsModule,],
->>>>>>> bb5697a204588b3c8992ddc9ca07a5eaff948997
   providers: [BookStoreService],
   bootstrap: [AppComponent]
 })
