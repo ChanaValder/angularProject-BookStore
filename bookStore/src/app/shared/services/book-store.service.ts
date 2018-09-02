@@ -5,16 +5,16 @@ import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { error } from '../../../../node_modules/protractor';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
 export class BookStoreService {
 adressStore:Adress
   user:User;
+ 
+ 
+  basicURL:string="http://localhost:3500/api";
 
-  basicURL="http://localhost:3500/api"
   constructor(public httpClient:HttpClient) {
     this.user=null;
     this.adressStore=new Adress("Hirsh",15,"Bnei-Brak");
@@ -25,7 +25,7 @@ adressStore:Adress
         (res) => { alert("good")},err=>{alert("bad")}
         
     )
-}
+  }
 
    registerUser(newUser:User): void {
     let url: string = this.basicURL + "/register";
