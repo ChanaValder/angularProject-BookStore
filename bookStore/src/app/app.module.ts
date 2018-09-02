@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
-=======
+
+
 import { RouterModule, Routes } from '@angular/router';
->>>>>>> 3b3e32f9e1d9720d0fb21b05685f8bd412bc5035
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
