@@ -1,7 +1,15 @@
-<nav>
-  <a routerLink="/bookStore/home/login" routerLinkActive="active">login</a>
-  <a routerLink="/bookStore/home/register" routerLinkActive="active">register</a>
+<!-- <nav>
+  <a [routerLink]="['/login']" routerLinkActive="active">login</a>
+  <a [routerLink]="['myAccount/register']" routerLinkActive="active">register</a>
+  <a [routerLink]="['myAccount/login']" routerLinkActive="active">logout</a>
 </nav>
 
 
-<router-outlet name='account'></router-outlet>
+<div class="inner-outlet">
+  <router-outlet></router-outlet>
+</div> -->
+
+<h2>About</h2>
+<a routerLink="/bookStore//myAccount/login">login</a>
+<a routerLink="/bookStore/myAccount/register">register</a>
+
