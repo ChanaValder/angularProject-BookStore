@@ -15,10 +15,27 @@ export class BookStoreService {
   basicURL:string="http://localhost:3500/api";
 
   constructor(public httpClient:HttpClient) {
-
+   }
    
+   getMyCart()
+   {
+    let listBook = localStorage.getItem("myCart");
+    return (listBook) ? JSON.parse(listBook) : [];
    }
 
+   clearMyCart()
+   {
+    localStorage.clear();
+   }
+   removeBookFromMyCart()
+   {
+      
+   }
+
+   addBookToMyCart()
+   {
+     
+   }
    
  
 }
