@@ -66,14 +66,18 @@ app.post("/api/register", (req, res) => {
 //     res.status(201).send(JSON.stringify(correntList));
 // })
 
-app.get("/api/login", (req, res) => {
+app.post("/api/login", (req, res) => {
     let correntList = require("./user.json");
     let allUser=JSON.stringify(correntList);
     let user=null;
     console.log(allUser);
     var date=JSON.parse(allUser,(value)=>{if(value.userName==req.body.userName&&value.password==req.body.password)
     user=value;
+    console.log("hi");
+    console.log(value);
     })
+    console.log(user);
+    
     if(user)
    res.status(201).send(value);
     else res.status(400).send();

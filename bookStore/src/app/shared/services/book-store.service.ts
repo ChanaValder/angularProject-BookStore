@@ -21,7 +21,7 @@ adressStore:Adress
    }
 
    login(user): void {
-    this.httpClient.get(this.basicURL+"/login",user).subscribe(
+    this.httpClient.post(this.basicURL+"/login",user).subscribe(
         (res) => { alert("good")},err=>{alert("bad")}
         
     )
