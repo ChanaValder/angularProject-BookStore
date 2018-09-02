@@ -10,6 +10,8 @@
 </div> -->
 
 <h2>About</h2>
-<a routerLink="/bookStore//myAccount/login">login</a>
-<a routerLink="/bookStore/myAccount/register">register</a>
-
+<a [routerLink]="['/myAccount/login']">login</a>
+<a [routerLink]="['/myAccount/register']">register</a>
+<div class="inner-outlet">
+  <router-outlet></router-outlet>
+</div> 

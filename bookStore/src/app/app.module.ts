@@ -19,21 +19,20 @@ import { HttpClientModule } from "@angular/common/http";
 
 
 
-
 const appRoutes: Routes = [
-  { path: 'bookStore/home', component: HomeComponent },
-  { path: 'bookStore/myAccount', component: AccountComponent },
+ 
+  { path: 'myAccount', component: AccountComponent,children:[
+    { path: 'login', component: LoginComponent }, // url: about/
+    { path: 'register', component: RegisterComponent },// url: about/item
+  ] },
   { path: '', component: HomeComponent },
-  { path: 'bookStore', component: HomeComponent },
-  { path: 'bookStore/myAccount', component: AccountComponent },
-  { path: 'bookStore/myAccount/login', component: LoginComponent }, // url: about/
-  { path: 'bookStore/myAccount/register', component: RegisterComponent },// url: about/item
-  { path: 'bookStore/products', component: ProductsComponent },
-  { path: 'bookStore/myCart', component: CartComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'myCart', component: CartComponent },
   
 
 
 ];
+
 
 
 @NgModule({
@@ -52,12 +51,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule, 
-     RouterModule.forRoot( appRoutes ),
+     RouterModule.forRoot(appRoutes),
      ReactiveFormsModule, 
     HttpClientModule,
-    BrowserModule,
-     RouterModule.forRoot( appRoutes ),
-     ReactiveFormsModule, 
     FormsModule,],
   providers: [BookStoreService],
   bootstrap: [AppComponent]

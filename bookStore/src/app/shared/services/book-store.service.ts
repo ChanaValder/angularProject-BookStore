@@ -16,6 +16,7 @@ adressStore:Adress
   basicURL:string="http://localhost:3500/api";
 
   constructor(public httpClient:HttpClient) {
+
     this.user=null;
     this.adressStore=new Adress("Hirsh",15,"Bnei-Brak");
    }
@@ -32,12 +33,21 @@ adressStore:Adress
    registerUser(newUser:User): void {
     let url: string = this.basicURL + "/register";
     this.httpClient.post(url, newUser).subscribe(res => {
-      alert("good")
-
+      localStorage.setItem('user', JSON.stringify(res));
     },
       err => {
         alert("error");
     });
+  }
+
+  checkUserLogin()
+  {
+     return JSON.parse(localStorage.getItem('user'))
+  }
+
+  logout()
+  {
+    localStorage.clear();
   }
  
 }

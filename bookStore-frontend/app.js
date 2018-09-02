@@ -55,7 +55,7 @@ app.post("/api/register", (req, res) => {
     if (isPersonOk == true) {
         correntList.push(req.body)
         fs.writeFileSync("user.json", JSON.stringify(correntList));
-        res.status(201).send(JSON.stringify(correntList));
+        res.status(201).send(JSON.stringify(req.body));
     }
     else res.status(400).send();
 })
