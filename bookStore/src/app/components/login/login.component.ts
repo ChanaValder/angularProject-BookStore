@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, ValidatorFn } from '@angular/forms';
+import{BookStoreService} from '../../shared/services/book-store.service'
+import { User } from '../../shared/models/User.model';
 
 @Component({
   selector: 'app-login',
@@ -12,9 +14,9 @@ export class LoginComponent  {
   //----------------PROPERTIRS-------------------
   formGroup: FormGroup;
   obj: typeof Object = Object;
-
+  user:User;
   //----------------CONSTRUCTOR------------------
-  constructor() {
+  constructor( private bookStoreService:BookStoreService) {
     let formGroupConfig = {
       userName: new FormControl("", this.createValidatorArr("name", 3, 15,/^[A-Za-z]+$/)),
       userPassword: new FormControl("", this.createValidatorArr("password", 5, 10))
@@ -25,6 +27,14 @@ export class LoginComponent  {
 
   //----------------METHODS-------------------
   submitLogin() {
+    if (this.formGroup.invalid) {
+
+      return;
+    }
+     else{ 
+      this.user=this.formGroup.value;
+      this.bookStoreService.login(this.user);
+    }
    
   }
 
