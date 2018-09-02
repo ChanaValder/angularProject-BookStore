@@ -16,8 +16,22 @@ import { RegisterComponent } from './components/register/register.component';
 const appRoutes: Routes = [
   { path: 'bookStore/home', component:HomeComponent  },
   { path: 'bookStore/home/login', component:LoginComponent  },
+<<<<<<< HEAD
   { path: 'bookStore/home/register', component:RegisterComponent  },
+=======
+<<<<<<< HEAD
+  { path: 'bookStore/home/login', component:RegisterComponent  },
+  { path: 'bookStore/myAccount', component:AccountComponent  },
+  { path: 'bookStore/products', component:ProductsComponent  },
+  { path: 'bookStore/myCart', component:CartComponent  },
+ 
+
+ 
+=======
+  { path: 'bookStore/home/register', component:RegisterComponent  }
+>>>>>>> 2bb9c82e5b0f19dbaa1b674dcf5dcfe8e12d6df9
   { path: 'bookStore/home/productDetails/:id',component: ProductDetailsComponent },
+>>>>>>> e6be54d6dfbdbac404c56472ba48c2e5f6c3e526
 ];
 
 
