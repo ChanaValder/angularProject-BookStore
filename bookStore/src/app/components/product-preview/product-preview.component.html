@@ -1,10 +1,7 @@
 <div class="item-thumbs span3 photography" > 
- <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="img/works/full/image-04-full.jpg">
- <span class="overlay-img"></span>
- <span class="overlay-img-thumb font-icon-plus"></span>
-</a>
-  <h1 *ngIf="book.title">book title:{{book["title"]}}</h1>
+  <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'> 
+  <h2 *ngIf="book.title">book title:{{book["title"]}}</h2>
   <h3 *ngIf="book.subtitle">book sub title:{{book["subtitle"]}}</h3>
-  <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
+ 
   <button *ngIf="book.title||book.subtitle" value="book details" (click)="bookDetails()">view details</button>
 </div>
