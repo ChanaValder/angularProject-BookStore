@@ -1,4 +1,4 @@
-<form [formGroup]="formGroup" (ngSubmit)="submitRegister()">
+<!-- <form [formGroup]="formGroup" (ngSubmit)="submitRegister()">
 
     <div *ngFor="let x of obj.keys(formGroup.controls)">
         <label>{{x}}:</label>
@@ -12,4 +12,57 @@
 
     <input type="submit" value="Login" [disabled]="formGroup.invalid" />
 
-</form>
+</form> -->
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<div class="login-body">
+
+    <div class="menu">
+        <i class="fa fa-angle-down"></i>
+        <div class="dot"></div>
+        <ul>
+            <li>
+                <a [routerLink]="['/myAccount/register']">
+                    <i class="fa  fa-unlock-alt icon"></i>
+                    <span>Sing up</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/myAccount/login']">
+                    <i class="fa fa-user icon"></i>
+                    <span>Log in</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="user-wrapper">
+
+        <div class="avatar"></div>
+
+        <form [formGroup]="formGroup" (ngSubmit)="submitRegister()">
+
+            <div *ngFor="let x of obj.keys(formGroup.controls)" id="{{x}}">
+                <label>{{x}} </label>
+                <input formControlName="{{x}}" id="input" />
+
+                <div *ngIf="formGroup.controls[x].errors&&formGroup.controls[x].touched">
+                    <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
+                </div>
+            </div>
+            
+
+            <input type="submit" value="Register" class="log-btn" [disabled]="formGroup.invalid" />
+        </form>
+    </div>
+</div>

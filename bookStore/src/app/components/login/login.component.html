@@ -1,88 +1,42 @@
-<!-- 
-<form [formGroup]="formGroup" (ngSubmit)="submitLogin()">
-
-  <div *ngFor="let x of obj.keys(formGroup.controls)">
-      <label>{{x}}:</label>
-      <input formControlName="{{x}}" />
-
-      <div *ngIf="formGroup.controls[x].errors&&formGroup.controls[x].touched">
-          <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
-      </div>
-
-  </div>
-
-  <input type="submit" value="Login" [disabled]="formGroup.invalid" />
-
-</form> -->
-
-
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
 <div class="login-body">
-  
-  <div class="menu">
-    <i class="fa fa-angle-down"></i>
-    <div class="dot"></div>
-    <ul>
-      <li><a href="#"><i class="fa  fa-unlock-alt"></i><span>Sing up</span></a></li>
-      <li><a href="#"><i class="fa fa-user"></i><span>Log in</span></a></li>
-    </ul>
-  </div> 
-  
-  <div class="user-wrapper">
-    
-    <div class="avatar"></div>
-    
-<form [formGroup]="formGroup" (ngSubmit)="submitLogin()">
 
-    <div *ngFor="let x of obj.keys(formGroup.controls)">
-        <span><i class="fa fa-user"></i></span>
-        <input formControlName="{{x}}" placeholder="{{x}}" />
-  
-        <div *ngIf="formGroup.controls[x].errors&&formGroup.controls[x].touched">
-            <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
-        </div>
-  
+    <div class="menu">
+        <i class="fa fa-angle-down"></i>
+        <div class="dot"></div>
+        <ul>
+            <li>
+                <a [routerLink]="['/myAccount/register']">
+                    <i class="fa  fa-unlock-alt icon"></i>
+                    <span>Sing up</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/myAccount/login']">
+                    <i class="fa fa-user icon"></i>
+                    <span>Log in</span>
+                </a>
+            </li>
+        </ul>
     </div>
-  
-    <input type="submit" value="Login" [disabled]="formGroup.invalid" />
-  
-  </form>
-  <a href="#" class="log-btn">Login</a>
-    
-  </div>
-  
+
+    <div class="user-wrapper">
+
+        <div class="avatar"></div>
+
+        <form [formGroup]="formGroup" (ngSubmit)="submitLogin()">
+
+            <div *ngFor="let x of obj.keys(formGroup.controls)" id="{{x}}">
+                <label>{{x}} </label>
+                <input formControlName="{{x}}" id="input" />
+
+                <div *ngIf="formGroup.controls[x].errors&&formGroup.controls[x].touched">
+                    <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
+                </div>
+            </div>
+            <input type="submit" value="Login" class="log-btn" [disabled]="formGroup.invalid" />
+        </form>
+    </div>
 </div>
-
-
-
-
-
-
-<!-- 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<div class="login-body"> -->
-  
-  <!-- <div class="menu">
-    <i class="fa fa-angle-down"></i>
-    <div class="dot"></div>
-    <ul>
-      <li><a href="#"><i class="fa  fa-unlock-alt"></i><span>Sing up</span></a></li>
-      <li><a href="#"><i class="fa fa-user"></i><span>Log in</span></a></li>
-    </ul>
-  </div> 
-  
-  <div class="user-wrapper">
-    
-    <div class="avatar"></div>
-    
-    <div class="user-login">
-      <span><i class="fa fa-user"></i></span><input placeholder="Login">
-      <span><i class="fa fa-unlock-alt"></i></span><input placeholder="Password">
-    </div>
-    
-    <a href="#" class="log-btn">Login</a>
-    
-  </div>
-  
-</div> -->
