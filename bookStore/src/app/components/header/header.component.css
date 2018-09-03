@@ -150,15 +150,15 @@ height: 100%;
 .profile{
     position: absolute;
     right: 86px;
-    top: 27px;
+    top: 20px;
 }
 
 #imgProfile {
     position: absolute;
-    right: 33px;
+    right: -5px;
     width: 40px;
     height: 40px;
-    top: 18px;
+    top: 5px;
     border-radius: 16em;
 }
 .badge-notify{
@@ -185,4 +185,9 @@ height: 100%;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 2.25rem;
+}
+#spanName{
+    position: absolute;
+    top: 0px;
+    right: -37px;
 }
