@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { User } from '../models/User.model'
 import {  Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
+import { Router } from '../../../../node_modules/@angular/router';
 @Injectable({
   providedIn: 'root'
 })
@@ -9,7 +10,7 @@ export class UserService {
   user: User;
   basicURL: string = "http://localhost:3500/api";
   subject = new Subject();
-  constructor(public httpClient: HttpClient) {
+  constructor(public httpClient: HttpClient,public router:Router) {
     this.user = null;
   }
 
@@ -20,7 +21,8 @@ export class UserService {
         this.subject.next(this.checkUserLogin());
         this.user = res;
       }, err => {
-        alert("eror to do login");
+        this.router.navigate(['/myAccount/register']);
+
       }
     )
   }

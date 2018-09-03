@@ -12,7 +12,7 @@ export class ProductsComponent implements OnInit {
   constructor(private bookStoreService: BookStoreService) { }
   bookList: Book[];
   ngOnInit() {
-    this.getBook("");
+    this.getBook("a");
   }
   getBook(keySearch: string) {
     this.bookStoreService.getBooks(keySearch).subscribe(res => { this.bookList = res["items"]; }, err => { });
