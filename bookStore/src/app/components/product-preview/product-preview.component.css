@@ -25,6 +25,14 @@ img{
     height: 100px;
 }
 
+.single-products-catagory {
+    position: relative;
+    z-index: 1;
+    width: 33.33333%;
+    top: 0;
+    float: left;
+}
+
 
 
 

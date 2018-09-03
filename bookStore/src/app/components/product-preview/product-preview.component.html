@@ -1,7 +1,13 @@
-
-<div>
-  <h1 *ngIf="book.title">book title:{{book["title"]}}</h1>
-  <h3 *ngIf="book.subtitle" >book sub title:{{book["subtitle"]}}</h3>
-   <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'> 
-  <button *ngIf="book.title||book.subtitle" value="book details" (click)="bookDetails()">view details</button>
-</div>
+ 
+ <div *ngIf="book.title||book.subtitle" class="item-thumbs" class="single-products-catagory" >
+   <a>
+  <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
+  <!-- <span class="glyphicon glyphicon-shopping-cart"></span> -->
+  <div class="hover-content card-img-overlay">
+      <div class="line"></div>
+  <h4 *ngIf="book.title">book title:{{book["title"]}}</h4>
+  <p *ngIf="book.subtitle">book sub title:{{book["subtitle"]}}</p>
+</div> 
+ <button *ngIf="book.title||book.subtitle"  value="book details" (click)="bookDetails()">view details</button>
+  </a>
+ </div>

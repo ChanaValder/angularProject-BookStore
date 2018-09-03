@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../../shared/models/book.model';
 import { BookStoreService } from '../../shared/services/book-store.service';
+import { VolumeInfo } from '../../shared/models/volum-info.model';
 
 @Component({
   selector: 'app-products',
@@ -20,6 +21,7 @@ export class ProductsComponent implements OnInit {
   }
   search(keySearch) {
     this.getBook(keySearch);
+    
 
   }
 }
