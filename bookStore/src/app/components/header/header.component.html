@@ -1,40 +1,40 @@
-<div *ngIf="user; else UserNameDefault">
-  <p> Hello {{user.userName}}!</p>
-  <img [src]="user.imgUrl">
-</div>
-<ng-template #UserNameDefault>
-  Hello guest!
-  <!-- <img [src]=user.imgUrl> -->
-</ng-template>
-<nav class="amado-nav">
-<ul >
-  <li routerLinkActive="active">
-    <a [routerLink]="['/myAccount']">my account</a>
-  </li>
-  <li routerLinkActive="active">
-    <a [routerLink]="['/products']">products</a>
-  </li>
-  <li *ngIf="user" routerLinkActive="active">
-    <a [routerLink]="['/myCart']">my cart num products is: {{countMyCard}}</a>
-  </li>
-</ul>
+<div class="profile" *ngIf="user; else UserNameDefault">
+    <p> Hello {{user.userName}}!</p>
+    <img id="imgProfile" [src]="user.imgUrl">
+  </div>
+  <ng-template  #UserNameDefault>
+    Hello guest!
+    <!-- <img [src]=user.imgUrl> -->
+  </ng-template>
+
+<div class="area"></div>
+<nav class="main-menu">
+    
+    <ul>  
+        <li>
+            <a href="http://justinfarrow.com">
+                <i class="fa fa-user fa-2x"></i>
+                <a class="nav-text" [routerLink]="['/myAccount']">my account</a>
+            </a>
+          
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-book fa-2x"></i>
+                <a class="nav-text" [routerLink]="['/products']">products</a>
+            </a>
+            
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+               <i class="fa fa-shopping-cart fa-2x">  <span class="badge badge-notify">{{countMyCard}}</span></i>
+               <a class="nav-text"  [routerLink]="['/myCart']">my cart</a>
+             
+            </a>
+            
+        </li>
+        
+    </ul>
 </nav>
 
-
- 
-   
-    
-    <!-- Cart Menu -->
-    <div class="cart-fav-search mb-100">
-        <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
-        <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
-        <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
-    </div>
-    <!-- Social Button -->
-    <div class="social-info d-flex justify-content-between">
-        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    </div>
 

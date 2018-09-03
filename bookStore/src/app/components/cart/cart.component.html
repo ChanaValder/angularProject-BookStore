@@ -1,7 +1,7 @@
-<p>
+<h2>
   My cart
-</p>
-
+</h2>
+<div *ngIf="myCartBook.length==0">your cart empty</div>
 <div *ngFor="let book of myCartBook">
   <app-cart-product [book]="book"></app-cart-product>
 </div>
