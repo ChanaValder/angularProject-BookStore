@@ -94,6 +94,7 @@ display:table-cell;
 vertical-align:middle;
 width:190px;
   font-family: 'Titillium Web', sans-serif;
+  color: #fbb710 !important;
 }
 
 .main-menu>ul.logout {
@@ -121,6 +122,7 @@ nav {
 -ms-user-select:none;
 -o-user-select:none;
 user-select:none;
+
 }
 
 nav ul,nav li {
@@ -182,7 +184,11 @@ height: 100%;
     vertical-align: baseline;
     border-radius: 2.25rem;
 }
+<<<<<<< HEAD
+
+=======
 #imgUser{
     border-radius: 16em;
     width: 50px;
 }
+>>>>>>> 09540bbffefce972439fb60856a7bdb4a1f85f55
