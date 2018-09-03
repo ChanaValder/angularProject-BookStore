@@ -1,0 +1,23 @@
+
+
+.main-content-wrapper .header-area {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: relative;
+    z-index: 1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 320px;
+    flex: 0 0 320px;
+    width: 320px;
+    max-width: 320px;
+    background-color: #fff;
+    padding: 60px 75px;
+}
+footer{
+    position: absolute;
+    top: 93%;
+    right: 96px;
+}
+section{
+    margin-left: 10%;
+}
