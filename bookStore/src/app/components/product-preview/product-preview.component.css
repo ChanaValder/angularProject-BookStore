@@ -9,13 +9,11 @@
     margin-left: 20px;
     border-collapse: collapse;
     border-style: solid;
-    border-color:#fbb710;
-}
-
-.span3 {
+    border-color:#fbb710; 
     width: 300px;
     height: 300px;
 }
+
 h2{
 
 }

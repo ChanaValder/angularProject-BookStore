@@ -7,7 +7,7 @@ import { VolumeInfo } from '../../shared/models/volum-info.model';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  myCartBook:VolumeInfo[];
+  myCartBook: VolumeInfo[];
 
   constructor(public bookService: BookStoreService) { }
 
@@ -18,7 +18,10 @@ export class CartComponent implements OnInit {
           this.myCartBook = v;
         }
       })
-    this.myCartBook= this.bookService.getMyCart();
+    this.myCartBook = this.bookService.getMyCart();
+
+
+
   }
 
 }

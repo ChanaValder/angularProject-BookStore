@@ -1,7 +1,11 @@
-<div class="item-thumbs span3 photography" > 
-  <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'> 
-  <h2 *ngIf="book.title">book title:{{book["title"]}}</h2>
-  <h3 *ngIf="book.subtitle">book sub title:{{book["subtitle"]}}</h3>
- 
+<div class="item-thumbs" >
+    <a href="">   
+      <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>  </a>
+  <!-- <span class="glyphicon glyphicon-shopping-cart"></span> -->
+  <div class="hover-content">
+      <div class="line"></div>
+  <h4 *ngIf="book.title">book title:{{book["title"]}}</h4>
+  <p *ngIf="book.subtitle">book sub title:{{book["subtitle"]}}</p>
   <button *ngIf="book.title||book.subtitle" value="book details" (click)="bookDetails()">view details</button>
-</div>
+</div> 
+ </div>
