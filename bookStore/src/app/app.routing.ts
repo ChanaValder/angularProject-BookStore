@@ -8,6 +8,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './shared/auth.guard';
+import { AuthLogin } from './shared/auth.login';
 
 
 
@@ -15,8 +16,8 @@ import { AuthGuard } from './shared/auth.guard';
 const appRoutes: Routes = [
  
   { path: 'myAccount', component: AccountComponent,children:[
-    { path: 'login', component: LoginComponent }, 
-    { path: 'register', component: RegisterComponent },
+    { path: 'login', component: LoginComponent,canActivate: [AuthLogin] }, 
+    { path: 'register', component: RegisterComponent,canActivate: [AuthLogin] },
   ] },
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
