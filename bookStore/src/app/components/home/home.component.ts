@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   constructor(public userService: UserService) { }
   adressStore: Adress
+  img:string="imageStoreBook.png";
   ngOnInit() {
     this.adressStore = new Adress("Hirsh", 15, "Bnei-Brak");
   }

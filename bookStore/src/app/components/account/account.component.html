@@ -1,7 +1,7 @@
 <h2>
   myAccount</h2>
-<li *ngIf="!user">
-  <a [routerLink]="['/myAccount/login']">login</a>
+<li href="#mySignin" data-toggle="modal" *ngIf="!user">
+  <a  [routerLink]="['/myAccount/login']">login</a>
 </li>
 <li *ngIf="!user">
   <a [routerLink]="['/myAccount/register']">register</a>
