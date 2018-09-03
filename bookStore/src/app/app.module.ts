@@ -6,7 +6,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HomeComponent } from './components/home/home.component';
-import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './components/account/account.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
@@ -18,24 +17,11 @@ import { HttpClientModule } from "@angular/common/http";
 import { ProductPreviewComponent } from './components/product-preview/product-preview.component';
 import { UserService } from './shared/services/user.service';
 import { CartProductComponent } from '../app/components/cart-product/cart-product.component';
+import { routing } from './app.routing';
 
 
 
-const appRoutes: Routes = [
- 
-  { path: 'myAccount', component: AccountComponent,children:[
-    { path: 'login', component: LoginComponent }, // url: about/
-    { path: 'register', component: RegisterComponent },// url: about/item
-  ] },
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'productsDetails/:book', component: ProductDetailsComponent},
-  { path: 'products', component: ProductsComponent },
-  { path: 'myCart', component: CartComponent },
- 
 
-
-];
 
 
 
@@ -57,7 +43,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule, 
-     RouterModule.forRoot(appRoutes),
+    routing,
      ReactiveFormsModule, 
     HttpClientModule,
     FormsModule,],
