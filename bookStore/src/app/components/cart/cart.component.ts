@@ -9,10 +9,20 @@ import { VolumeInfo } from '../../shared/models/volum-info.model';
 })
 export class CartComponent implements OnInit {
   myCartBook:VolumeInfo[];
+
   constructor(public bookService:BookStoreService) { }
 
   ngOnInit() {
-    //this.myCartBook= this.bookService.getMyCart();
+
+    this.bookService.subject.subscribe(
+      {
+        next: (v: any) => {
+          this.myCartBook = v;
+        }
+      })
+    this.myCartBook= this.bookService.getMyCart();
+
+
 
   }
 

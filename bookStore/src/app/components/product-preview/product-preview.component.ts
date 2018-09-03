@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { Router, ActivatedRoute } from '@angular/router';
 import { VolumeInfo } from '../../shared/models/volum-info.model';
+import { BookStoreService } from '../../shared/services/book-store.service';
 
 @Component({
   selector: 'app-product-preview',
@@ -11,15 +12,17 @@ import { VolumeInfo } from '../../shared/models/volum-info.model';
 export class ProductPreviewComponent implements OnInit {
 
   constructor( private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+  public bookService:BookStoreService) { }
 @Input()
   book:VolumeInfo;  
   ngOnInit() {
-    console.log(this.book)
+    
   }
   bookDetails()
   {
-    this.router.navigate(['/productsDetails',this.book.title ]);
+    this.bookService.book=this.book;
+    this.router.navigate(['/productsDetails']);
   }
 
 }

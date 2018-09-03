@@ -17,10 +17,7 @@ user:User;
   constructor( private route: ActivatedRoute,public bookService:BookStoreService,
     public userService:UserService,public router:Router) { 
       this.user=this.userService.checkUserLogin();
-      console.log(this.user);
-    this.route.params.subscribe( params =>{ console.log(params['book']);
-     this.titleBook=params['book']} );
-    
+      this.book=this.bookService.book;
   }
 
   ngOnInit() {
@@ -29,9 +26,7 @@ user:User;
 
   addToMyCart()
   {
-   
     //search book
-
     this.bookService.addBookToMyCart(this.book);
   }
 

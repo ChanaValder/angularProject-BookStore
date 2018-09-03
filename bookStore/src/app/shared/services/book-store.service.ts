@@ -12,8 +12,9 @@ import { VolumeInfo } from '../models/volum-info.model';
 })
 export class BookStoreService {
 
- subject=new Subject();
- 
+  subjectCart=new Subject();
+  subject=new Subject();
+  book:VolumeInfo;
   basicURL:string="http://localhost:3500/api";
   bookList:Book[];
  
@@ -40,18 +41,21 @@ export class BookStoreService {
    removeBookFromMyCart(book:VolumeInfo)
    {
     let bookList:any = this.getMyCart();
-    //bookList.splice(bookList.findIndex(x=>x.booktitle==book),1);
-    localStorage.setItem("taskList", JSON.stringify(bookList));;
+    bookList.splice(book['id'],1);
+    localStorage.setItem("myCart", JSON.stringify(bookList));;
+    this.subject.next(this.getMyCart())
    }
 
    addBookToMyCart(book:VolumeInfo)
    {
+   
     let bookList = this.getMyCart();
+    book['id']=bookList.length;
     bookList.push(book);
     localStorage.setItem("myCart", JSON.stringify(bookList));
-    this.subject.next(this.getMyCart().count)
+    this.subject.next(this.getMyCart())
 
    }
-   
+
  
 }

@@ -29,12 +29,9 @@ const appRoutes: Routes = [
   ] },
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'productsDetails/:book', component: ProductDetailsComponent},
+  { path: 'productsDetails', component: ProductDetailsComponent},
   { path: 'products', component: ProductsComponent },
   { path: 'myCart', component: CartComponent },
- 
-
-
 ];
 
 

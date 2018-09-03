@@ -10,9 +10,10 @@ import { UserService } from '../../shared/services/user.service';
 })
 export class HeaderComponent implements OnInit {
   user: User;
-  countMyCard:number=0;
+  countMyCard:number;
   constructor(private userService: UserService,public bookService:BookStoreService) {
     this.user=this.userService.checkUserLogin();
+   this.countMyCard= this.bookService.getMyCart().length;
     this.userService.subject.subscribe(
       {
         next: (v: any) => {
@@ -23,7 +24,7 @@ export class HeaderComponent implements OnInit {
       this.bookService.subject.subscribe(
         {
           next: (v: any) => {
-            this.countMyCard = v;
+            this.countMyCard = v.length;
           }
         })
   }
