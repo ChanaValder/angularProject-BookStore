@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { UserService } from '../../shared/services/user.service';
 import { User } from '../../shared/models/User.model';
 
@@ -7,10 +7,10 @@ import { User } from '../../shared/models/User.model';
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css']
 })
-export class AccountComponent implements OnInit {
-  user:User;
-  constructor(public userService:UserService) {
-    this.user=this.userService.checkUserLogin();
+export class AccountComponent {
+  user: User;
+  constructor(public userService: UserService) {
+    this.user = this.userService.checkUserLogin();
     console.log(this.user);
     this.userService.subject.subscribe(
       {
@@ -18,15 +18,9 @@ export class AccountComponent implements OnInit {
           this.user = v;
         }
       })
-   }
-
-  ngOnInit() {
-   
   }
 
-  logout()
-  {
+  logout() {
     this.userService.logout();
   }
-
 }

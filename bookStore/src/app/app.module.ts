@@ -21,22 +21,6 @@ import { routing } from './app.routing';
 
 
 
-<<<<<<< HEAD
-const appRoutes: Routes = [
- 
-  { path: 'myAccount', component: AccountComponent,children:[
-    { path: 'login', component: LoginComponent }, // url: about/
-    { path: 'register', component: RegisterComponent },// url: about/item
-  ] },
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'productsDetails', component: ProductDetailsComponent},
-  { path: 'products', component: ProductsComponent },
-  { path: 'myCart', component: CartComponent },
-];
-=======
-
->>>>>>> 8ba738cecb063d45f0fd9246b6c0579ded4284a8
 
 
 
