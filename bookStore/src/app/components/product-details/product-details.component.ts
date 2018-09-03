@@ -11,29 +11,27 @@ import { VolumeInfo } from '../../shared/models/volum-info.model';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-book:VolumeInfo;
-titleBook:string
-user:User;
-  constructor( private route: ActivatedRoute,public bookService:BookStoreService,
-    public userService:UserService,public router:Router) { 
-      this.user=this.userService.checkUserLogin();
-      this.book=this.bookService.book;
+  book: VolumeInfo;
+  titleBook: string
+  user: User;
+  constructor(private route: ActivatedRoute, public bookService: BookStoreService,
+    public userService: UserService, public router: Router) {
+    this.user = this.userService.checkUserLogin();
+    this.book = this.bookService.book;
   }
 
   ngOnInit() {
-    this.user=this.userService.checkUserLogin();
+    this.user = this.userService.checkUserLogin();
   }
 
-  addToMyCart()
-  {
+  addToMyCart() {
     //search book
     this.bookService.addBookToMyCart(this.book);
   }
 
 
-backProductsPage()
-{
-  this.router.navigate(['/products' ]);
-}
+  backProductsPage() {
+    this.router.navigate(['/products']);
+  }
 
 }

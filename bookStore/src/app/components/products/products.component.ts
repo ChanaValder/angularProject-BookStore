@@ -9,19 +9,17 @@ import { BookStoreService } from '../../shared/services/book-store.service';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor(private bookStoreService:BookStoreService) { }
-  bookList:Book[];
+  constructor(private bookStoreService: BookStoreService) { }
+  bookList: Book[];
   ngOnInit() {
-    this.getBook(""); 
-}
-getBook(keySearch:string)
-{
-  this.bookStoreService.getBooks(keySearch).subscribe(res=>{  this.bookList=res["items"]; },err=>{alert("error")});
+    this.getBook("");
+  }
+  getBook(keySearch: string) {
+    this.bookStoreService.getBooks(keySearch).subscribe(res => { this.bookList = res["items"]; }, err => { alert("error") });
 
-}
-search(keySearch)
-{
-this.getBook(keySearch);
+  }
+  search(keySearch) {
+    this.getBook(keySearch);
 
-}
+  }
 }
