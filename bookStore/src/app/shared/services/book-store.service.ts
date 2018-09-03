@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import{User} from '../models/User.model'
 import { Adress } from '../models/Adress.model';
-import { Observable } from "rxjs";
+import { Observable, Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { error } from '../../../../node_modules/protractor';
 import { Book } from '../models/book.model';
+import { VolumeInfo } from '../models/volum-info.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookStoreService {
 
- 
+ subject=new Subject();
  
   basicURL:string="http://localhost:3500/api";
   bookList:Book[];
@@ -36,17 +37,20 @@ export class BookStoreService {
    {
     localStorage.clear();
    }
-   removeBookFromMyCart(book:Book)
+   removeBookFromMyCart(book:VolumeInfo)
    {
-    let bookList = this.getMyCart();
-    bookList.push(book);
+    let bookList:any = this.getMyCart();
+    //bookList.splice(bookList.findIndex(x=>x.booktitle==book),1);
+    localStorage.setItem("taskList", JSON.stringify(bookList));;
    }
 
-   addBookToMyCart(book:Book)
+   addBookToMyCart(book:VolumeInfo)
    {
     let bookList = this.getMyCart();
     bookList.push(book);
     localStorage.setItem("myCart", JSON.stringify(bookList));
+    this.subject.next(this.getMyCart().count)
+
    }
    
  

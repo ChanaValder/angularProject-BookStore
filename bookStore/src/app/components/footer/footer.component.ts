@@ -13,9 +13,7 @@ export class FooterComponent implements OnInit {
     this.date=new Date().getFullYear();
     this.footerMessage="all rights reserved Chaya and Chany";
    }
-
- 
-
+   
   ngOnInit() {
   }
 

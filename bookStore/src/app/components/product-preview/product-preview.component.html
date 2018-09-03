@@ -1,0 +1,7 @@
+
+<div>
+  <h1 *ngIf="book.title">book title:{{book["title"]}}</h1>
+  <h3 *ngIf="book.subtitle" >book sub title:{{book["subtitle"]}}</h3>
+   <img [src]='book["imageLinks"]["thumbnail"]'> 
+  <button *ngIf="book.title||book.subtitle" value="book details" (click)="bookDetails()">view details</button>
+</div>

@@ -5,7 +5,7 @@
       <label>{{x}}:</label>
       <input formControlName="{{x}}" />
 
-      <div *ngIf="formGroup.controls[x].errors">
+      <div *ngIf="formGroup.controls[x].errors&&formGroup.controls[x].touched">
           <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
       </div>
 

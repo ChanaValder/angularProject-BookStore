@@ -1,17 +1,11 @@
-<!-- <nav>
-  <a [routerLink]="['/login']" routerLinkActive="active">login</a>
-  <a [routerLink]="['myAccount/register']" routerLinkActive="active">register</a>
-  <a [routerLink]="['myAccount/login']" routerLinkActive="active">logout</a>
-</nav>
 
-
-<div class="inner-outlet">
-  <router-outlet></router-outlet>
-</div> -->
-
-<h2>About</h2>
-<a [routerLink]="['/myAccount/login']">login</a>
-<a [routerLink]="['/myAccount/register']">register</a>
+<h2>myAccount</h2>
+<li *ngIf="!user">
+<a  [routerLink]="['/myAccount/login']">login</a></li>
+<li *ngIf="!user">
+<a  [routerLink]="['/myAccount/register']">register</a></li>
+<li *ngIf="user">
+<a  [routerLink]="['/home']" (click)="logout()">logout</a></li>
 <div class="inner-outlet">
   <router-outlet></router-outlet>
 </div> 

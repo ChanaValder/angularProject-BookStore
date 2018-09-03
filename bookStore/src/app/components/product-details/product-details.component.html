@@ -1,3 +1,11 @@
-<p>
-  product-details works!
-</p>
+<li>{{titleBook}}</li>
+<!-- <li>{{book.subtitle}}</li>
+<li>{{book.authors}}</li>
+<li>{{book.publisher}}</li>
+<li>{{book.publishedDate}}</li>
+<li>{{book.description}}</li>
+<li>{{book.pageCount}}</li> -->
+
+ 
+ <button  type="button" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">addToMyCart</button>
+ <button  type="button" (click)="backProductsPage()" >back to all Products</button>
