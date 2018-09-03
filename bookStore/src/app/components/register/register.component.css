@@ -1,0 +1,245 @@
+body {
+    background: #575A61;  
+    font-family: Helvetica, ARIAL, sans-serif;
+  }
+  
+  a, a:hover {
+    text-decoration: none;
+  }
+  
+  .login-body {
+    top: -116px;
+    overflow: hidden;
+    position: relative;
+    width: 740px;
+    height: 585px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 3px;
+    background: url(https://images.unsplash.com/photo-1442120108414-42e7ea50d0b5?fit=crop&fm=jpg&h=475&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1275);
+    background-size: auto;
+    background-position: center;
+  }
+  
+  .menu {
+    overflow: hidden;
+    position: absolute;
+    width: 740px;
+      height: 30px; 
+    text-align: center;
+    background:#fbb710;
+    transition: linear 0.5s;
+  }
+  
+  .menu:hover {
+    height: 100px;
+  }
+  
+  .menu .fa-angle-down {
+    position: absolute;
+    bottom: 5px;
+    margin-left: -2px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .menu:hover .fa-angle-down {
+    transform: scale(1) rotate(180deg) translate(0);
+    transition: linear 0.5s;
+  }
+  
+  .menu .dot {
+    position: absolute;
+    top: 40%;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    display: none;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .menu:hover .dot {
+    display: inline-block;
+  }
+  
+  .menu ul {
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+  }
+  
+  .menu:hover ul {
+    height: 100%;
+    transition: linear 0.8s;
+  }
+  
+  .menu ul li {
+    width: 50px;
+    margin: 0 30px;
+    padding: 0px 20px 0 20px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: linear 0.8s;
+  }
+  
+  .menu ul li:hover {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  
+  .menu ul li i {
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .menu ul li span {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  
+  .menu ul li a:hover i {
+    opacity:0.6;
+  }
+  
+  .user-wrapper {
+    height: 100%;
+    padding: 50px;
+    background-color:rgba(36, 35, 33, 0.7);
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    display:inline-block;
+    background: url("http://static.srcdn.com/slir/w620-h320-q90-c620:320/wp-content/uploads/Darth-Vader-voiced-by-Arnold-Schwarzenegger.jpg");
+    background-position:-55px 10px;
+    border-radius:50%;
+    background-size:cover;
+  }
+  
+  
+  .user-login span {
+    position: relative;
+    top: -5px;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 2px 0 0 2px;
+    background:#fbb710; 
+  }
+  
+  
+  .user-login input {
+    height: 30px;
+    width: 180px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 0;
+    display:inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    outline-offset: -3px;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: none;
+  }
+  
+  .user-login input:focus {
+    background: none;
+    outline-offset: -3px;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  
+  ::-webkit-input-placeholder {
+    color:#fff;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  
+  .user-login i {
+    position:relative;
+    top: 5px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .log-btn {
+    margin: 109px 0;
+    padding: 15px 60px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background:#fbb710;
+    transition: linear 0.3s;
+  }
+  
+  .log-btn:disabled {
+    color: #fbb710;
+    border: 2px solid #fbb710;
+    background: none;
+    position: absolute;
+    top: 40vh;
+    right: 14vw;
+  }
+ 
+  #firstName{
+    position: absolute;
+    top: 11vh;
+    right: 15vw;
+
+  }
+
+  #lastName{
+    position: absolute;
+    top: 21vh;
+    right: 15vw;
+
+  }
+  
+  #userName{
+    position: absolute;
+    top: 31vh;
+    right: 15vw;
+  }
+  #userPassword{
+    position: absolute;
+    top: 41vh;
+    right: 15vw;
+  }
+
+  #input{
+   background-color:unset;
+   border:none;
+   border-bottom : #fbb710 solid;
+   color :white;
+
+  }
+  label{
+    display: flow-root;
+    margin-bottom: .5rem;
+    color: white;
+  }
