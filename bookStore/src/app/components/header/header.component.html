@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+<div *ngIf="user; else UserNameDefault">
+  <p> Hello {{user.userName}}!</p>
+  <img [src]="user.imgUrl">
+</div>
+<ng-template #UserNameDefault>
+  Hello guest!
+  <img src="../../../assets/avatar2.png" id="imgUser"/>
+</ng-template>
+<nav class="amado-nav">
+<ul >
+  <li routerLinkActive="active">
+    <a [routerLink]="['/myAccount']">my account</a>
+  </li>
+  <li routerLinkActive="active">
+    <a [routerLink]="['/products']">products</a>
+  </li>
+  <li *ngIf="user" routerLinkActive="active">
+    <a [routerLink]="['/myCart']">my cart num products is: {{countMyCard}}</a>
+  </li>
+</ul>
+</nav>
+
+=======
 <div class="profile" *ngIf="user; else UserNameDefault">
     <p> Hello {{user.userName}}!</p>
     <img id="imgProfile" [src]="user.imgUrl">
@@ -6,6 +30,7 @@
     Hello guest!
     <!-- <img [src]=user.imgUrl> -->
   </ng-template>
+>>>>>>> ea33d747c81e12983b91fdef8334064420eea79f
 
 <div class="area"></div>
 <nav class="main-menu">
