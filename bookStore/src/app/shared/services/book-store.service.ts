@@ -37,7 +37,7 @@ export class BookStoreService {
    {
     let bookList:any = this.getMyCart();
     bookList.splice(book['id'],1);
-    localStorage.setItem("myCart", JSON.stringify(bookList));;
+    localStorage.setItem("myCart", JSON.stringify(bookList));
     this.subject.next(this.getMyCart())
    }
 
