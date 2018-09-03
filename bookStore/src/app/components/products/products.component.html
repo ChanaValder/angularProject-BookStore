@@ -1,8 +1,13 @@
 <input type="text" (keyup)=search($event.target.value)>
 
-<div>
+<div class="scroll">
   <h1>my books</h1>
-  <div *ngFor="let book of bookList">
+  
+<div id="contact" class="container-fluid bg-grey" >
+  <div *ngFor="let book of bookList"  class="col-md-6 col-xs-2 col-md-offset-2 " class="cardProduct card divCard" >
     <app-product-preview [book]="book.volumeInfo"></app-product-preview>
   </div>
 </div>
+</div>
+
+
