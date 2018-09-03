@@ -3,6 +3,6 @@
 <div>
   <h1>my books</h1>
   <div *ngFor="let book of bookList">
-    <app-product-preview [book]="book"></app-product-preview>
+    <app-product-preview [book]="book.volumeInfo"></app-product-preview>
   </div>
 </div>

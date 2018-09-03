@@ -30,14 +30,14 @@ app.get(`/`, (req, res) => {
 
 });
 
-fs.readdir(basePath, (err, files) => {
-    files.forEach((file) => {
-        app.use(express.static(`${basePath}/${file}`));
-        app.get(`/${file}`, (req, res) => {
-            res.sendFile(`${basePath}/${file}/index.html`);
-        });
-    })
-});
+// fs.readdir(basePath, (err, files) => {
+//     files.forEach((file) => {
+//         app.use(express.static(`${basePath}/${file}`));
+//         app.get(`/${file}`, (req, res) => {
+//             res.sendFile(`${basePath}/${file}/index.html`);
+//         });
+//     })
+// });
 var corsOptions = {
     origin: '*',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
@@ -60,17 +60,10 @@ app.post("/api/register", (req, res) => {
     else res.status(400).send();
 })
 
-<<<<<<< HEAD
  app.get("/api/getList", (req, res) => {
      let correntList = require("./book.json");
      res.status(201).send(JSON.stringify(correntList));
  })
-=======
-  app.get("/api/getList", (req, res) => {
-      let correntList = require("./book.json");
-     res.status(201).send(JSON.stringify(correntList));
-  })
->>>>>>> a8b78c0a1e9d7486c8b118af7050b91e462670f0
 
 app.post("/api/login", (req, res) => {
     let correntList = require("./user.json");

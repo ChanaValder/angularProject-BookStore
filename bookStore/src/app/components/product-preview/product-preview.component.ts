@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { VolumeInfo } from '../shared/models/volum-info.model';
+
 import { Router, ActivatedRoute } from '@angular/router';
+import { VolumeInfo } from '../../shared/models/volum-info.model';
 
 @Component({
   selector: 'app-product-preview',
@@ -14,11 +15,11 @@ export class ProductPreviewComponent implements OnInit {
 @Input()
   book:VolumeInfo;  
   ngOnInit() {
-    console.log(this.book.title)
+    console.log(this.book)
   }
-  bookDetails(booktitle:string)
+  bookDetails()
   {
-    this.router.navigate(['/productsDetails',booktitle ]);
+    this.router.navigate(['/productsDetails',this.book.title ]);
   }
 
 }

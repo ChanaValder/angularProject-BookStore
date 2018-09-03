@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   constructor(public userService:UserService) { }
 adressStore:Adress
   ngOnInit() {
-    this.adressStore=this.userService.adressStore;
+     this.adressStore=new Adress("Hirsh",15,"Bnei-Brak");
   }
 
 }
