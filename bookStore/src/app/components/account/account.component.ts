@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UserService } from '../../shared/services/user.service';
 import { User } from '../../shared/models/User.model';
+import { BookStoreService } from '../../shared/services/book-store.service';
 
 @Component({
   selector: 'app-account',
@@ -9,7 +10,7 @@ import { User } from '../../shared/models/User.model';
 })
 export class AccountComponent {
   user: User;
-  constructor(public userService: UserService) {
+  constructor(public userService: UserService,public bookService:BookStoreService) {
     this.user = this.userService.checkUserLogin();
     console.log(this.user);
     this.userService.subject.subscribe(
@@ -22,5 +23,6 @@ export class AccountComponent {
 
   logout() {
     this.userService.logout();
+    this.bookService.subjectCart.next(this.bookService.getMyCart());
   }
 }

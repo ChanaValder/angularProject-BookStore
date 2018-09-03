@@ -46,6 +46,7 @@ export class UserService {
   logout() {
     localStorage.clear();
     this.subject.next(this.checkUserLogin());
+    
   }
 
 }
