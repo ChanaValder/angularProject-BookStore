@@ -55,3 +55,7 @@ a {
     margin: 0;
     padding: 0;
 }
+#imgUser{
+    border-radius: 16em;
+    width: 50px;
+}
