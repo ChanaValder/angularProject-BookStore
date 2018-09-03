@@ -7,6 +7,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { AuthGuard } from './shared/auth.guard';
 
 
 
@@ -14,14 +15,14 @@ import { RegisterComponent } from './components/register/register.component';
 const appRoutes: Routes = [
  
   { path: 'myAccount', component: AccountComponent,children:[
-    { path: 'login', component: LoginComponent }, // url: about/
-    { path: 'register', component: RegisterComponent },// url: about/item
+    { path: 'login', component: LoginComponent }, 
+    { path: 'register', component: RegisterComponent },
   ] },
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'productsDetails/:book', component: ProductDetailsComponent},
+  { path: 'productsDetails', component: ProductDetailsComponent},
   { path: 'products', component: ProductsComponent },
-  { path: 'myCart', component: CartComponent },
+  { path: 'myCart', component: CartComponent,canActivate: [AuthGuard] },
  
 
 
