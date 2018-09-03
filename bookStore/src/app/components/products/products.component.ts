@@ -15,7 +15,7 @@ export class ProductsComponent implements OnInit {
     this.getBook("");
   }
   getBook(keySearch: string) {
-    this.bookStoreService.getBooks(keySearch).subscribe(res => { this.bookList = res["items"]; }, err => { alert("error") });
+    this.bookStoreService.getBooks(keySearch).subscribe(res => { this.bookList = res["items"]; }, err => { });
 
   }
   search(keySearch) {
