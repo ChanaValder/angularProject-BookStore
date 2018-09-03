@@ -11,20 +11,17 @@
   Hello guest!
   <!-- <img [src]=user.imgUrl> -->
 </ng-template>
-<div class="collapse navbar-collapse" id="navbarResponsive">
 <ul class="navbar-nav ml-auto">
   <li routerLinkActive="active" class="nav-item">
-    <a class="nav-link" [routerLink]="['/myAccount']">my account</a>
+    <a [routerLink]="['/myAccount']">my account</a>
   </li>
   <li routerLinkActive="active" class="nav-item">
-    <a class="nav-link"[routerLink]="['/products']">products</a>
+    <a [routerLink]="['/products']">products</a>
   </li>
   <li *ngIf="user" routerLinkActive="active" class="nav-item">
-    <a class="nav-link" [routerLink]="['/myCart']">my cart num products is: {{countMyCard}}</a>
+    <a [routerLink]="['/myCart']">my cart num products is: {{countMyCard}}</a>
   </li>
 </ul>
-<<<<<<< HEAD
-</div>
 </div>
 </nav>
 
@@ -33,25 +30,4 @@
     
     
    
-   
-        <!-- <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
-=======
->>>>>>> c98f15510831cf6f6c83352bf74cd1526fcda28d
-
+     
