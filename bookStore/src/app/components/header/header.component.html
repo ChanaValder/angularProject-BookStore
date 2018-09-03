@@ -1,7 +1,8 @@
 
 <div class="profile" *ngIf="user; else UserNameDefault">
   <p class="profile"> Hello {{user.userName}}!</p>
-  <img id="imgProfile" [src]="user.imgUrl">
+  <!-- <img id="imgProfile" [src]="user.imgUrl"> -->
+  <img id="imgProfile" src="../../../assets/avatar5.png">
 </div>
 <ng-template class="profile" #UserNameDefault>
  <p class="profile">Hello guest!</p> 
