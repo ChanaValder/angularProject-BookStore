@@ -1,11 +1,22 @@
+<<<<<<< HEAD
 <div *ngIf="user; else UserNameDefault">
   <p> Hello {{user.userName}}!</p>
   <img [src]="user.imgUrl">
+=======
+
+<div class="profile" *ngIf="user; else UserNameDefault">
+  <p class="profile"> Hello {{user.userName}}!</p>
+  <img id="imgProfile" [src]="user.imgUrl">
+>>>>>>> 3c1b2bb1cbb64d9f077ea9b9ba99d2459689f693
 </div>
-<ng-template #UserNameDefault>
-  Hello guest!
-  <img src="../../../assets/avatar2.png" id="imgUser"/>
+<ng-template class="profile" #UserNameDefault>
+ <p class="profile">Hello guest!</p> 
+  <img id="imgProfile" src="../../../assets/avatar2.png" />
 </ng-template>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c1b2bb1cbb64d9f077ea9b9ba99d2459689f693
 
 <div class="area"></div>
 <nav class="main-menu">

@@ -1,10 +1,21 @@
 <h2>
   My cart
 </h2>
+
+
+
+
+<div *ngFor="let book of myCartBook" class="product-img">
+    <app-cart-product [book]="book"></app-cart-product>
+    
+
 <div *ngIf="myCartBook.length==0">your cart empty</div>
+<<<<<<< HEAD
 
 <div id="contact" class="container-fluid bg-grey" >
   <div *ngFor="let book of myCartBook" class="col-md-6 col-md-offset-3 " class="cartProduct card divCard" >
     <app-cart-product [book]="book"></app-cart-product>
   </div>
 </div>
+=======
+>>>>>>> 3c1b2bb1cbb64d9f077ea9b9ba99d2459689f693
