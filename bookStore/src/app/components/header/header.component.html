@@ -1,8 +1,3 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-
-
-
-<div class="container">
 <div *ngIf="user; else UserNameDefault">
   <p> Hello {{user.userName}}!</p>
   <img [src]="user.imgUrl">
@@ -11,23 +6,17 @@
   Hello guest!
   <!-- <img [src]=user.imgUrl> -->
 </ng-template>
-<ul class="navbar-nav ml-auto">
-  <li routerLinkActive="active" class="nav-item">
+<ul class="nav navbar-nav">
+  <li routerLinkActive="active">
     <a [routerLink]="['/myAccount']">my account</a>
   </li>
-  <li routerLinkActive="active" class="nav-item">
+  <li routerLinkActive="active">
     <a [routerLink]="['/products']">products</a>
   </li>
-  <li *ngIf="user" routerLinkActive="active" class="nav-item">
+  <li *ngIf="user" routerLinkActive="active">
     <a [routerLink]="['/myCart']">my cart num products is: {{countMyCard}}</a>
   </li>
 </ul>
-</div>
-</nav>
 
 
 
-    
-    
-   
-     
