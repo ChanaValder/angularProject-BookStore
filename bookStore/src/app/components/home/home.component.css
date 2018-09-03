@@ -1,6 +1,6 @@
 /* Make the images wide and responsive. */
 #myCarousel img {
-    height: auto;
+    height: 380px;
     max-width: 100%;
     width: 100%;
   }
