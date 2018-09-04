@@ -9,6 +9,12 @@ export class AuthProduct implements CanActivate {
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
 
+
+        if(this.bookService.book)
+        {
+          //have detail to book
+            return true;
+        }
         // not allow to move to productDetails
         this.router.navigate(['/products']);
         return false;
