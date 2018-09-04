@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BookStoreService } from '../../shared/services/book-store.service';
 import { VolumeInfo } from '../../shared/models/volum-info.model';
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -22,7 +23,7 @@ export class CartComponent implements OnInit {
   }
   cancelReservation()
   {
-    
+    this.bookService.cancelReservation();
   }
 
 }
