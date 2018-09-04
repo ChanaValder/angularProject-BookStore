@@ -1,4 +1,3 @@
-
 import { ProductsComponent } from './components/products/products.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,22 +10,17 @@ import { AuthGuard } from './shared/auth.guard';
 import { AuthLogin } from './shared/auth.login';
 import { AuthProduct } from './shared/auto.product';
 
-
-
-
 const appRoutes: Routes = [
- 
-  { path: 'myAccount', component: AccountComponent,children:[
-    { path: 'login', component: LoginComponent,canActivate: [AuthLogin] }, 
-    { path: 'register', component: RegisterComponent,canActivate: [AuthLogin] },
-  ] },
+  {
+    path: 'myAccount', component: AccountComponent, children: [
+      { path: 'login', component: LoginComponent, canActivate: [AuthLogin] },
+      { path: 'register', component: RegisterComponent, canActivate: [AuthLogin] },
+    ]
+  },
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'productsDetails', component: ProductDetailsComponent,canActivate:[AuthProduct]},
+  { path: 'productsDetails', component: ProductDetailsComponent, canActivate: [AuthProduct] },
   { path: 'products', component: ProductsComponent },
-  { path: 'myCart', component: CartComponent,canActivate: [AuthGuard] },
- 
-
-
+  { path: 'myCart', component: CartComponent, canActivate: [AuthGuard] },
 ];
 export const routing = RouterModule.forRoot(appRoutes);

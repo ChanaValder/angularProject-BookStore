@@ -20,10 +20,6 @@ import { CartProductComponent } from '../app/components/cart-product/cart-produc
 import { routing } from './app.routing';
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,12 +37,15 @@ import { routing } from './app.routing';
     CartProductComponent
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     routing,
-     ReactiveFormsModule, 
+    ReactiveFormsModule,
     HttpClientModule,
     FormsModule,],
-  providers: [BookStoreService,UserService],
+  providers: [
+    BookStoreService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
