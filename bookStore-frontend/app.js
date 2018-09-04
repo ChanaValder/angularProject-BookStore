@@ -100,6 +100,9 @@ const handleError = (err, res) => {
         .end("Oops! Something went wrong!");
 };
 
+var multer  = require('multer')
+var upload = multer({ dest: 'uploads/' })
+
 app.post("/api/upload", upload.single("file" /* name attribute of <file> element in your form */),
     (req, res) => {
         console.log("upload");
@@ -118,16 +121,16 @@ app.post("/api/upload", upload.single("file" /* name attribute of <file> element
         });
     });
 
-const basePath = path.join(__dirname);
+const basePath1 = path.join(__dirname);
 
 app.get(`/uploads`, (req, res) => {
     let fileName = req.query.fileName;
-    res.sendFile(`${basePath}/uploads/${fileName}`);
+    res.sendFile(`${basePath1}/uploads/${fileName}`);
 });
 
 // Assuming that 'path/file.txt' is a regular file.
 removeImage=(fileName)=>{
-    fs.unlink(`${basePath}/uploads/${fileName}`, (err) => {
+    fs.unlink(`${basePath1}/uploads/${fileName}`, (err) => {
         if (err) throw err;
         console.log('path/file.txt was deleted');
       });
