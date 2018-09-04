@@ -1,14 +1,21 @@
-<li>{{titleBook}}</li>
-
-<li>{{book.subtitle}}</li>
-<div *ngFor="let author of book.authors">
+<div class="col-md-6">
+   <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
 </div>
-<li>{{book.authors}}</li>
-<li>{{book.publisher}}</li>
-<li>{{book.publishedDate}}</li>
-<li>{{book.description}}</li>
-<li>{{book.pageCount}}</li>
-<img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
+<div>
+        <li>{{titleBook}}</li>
 
-<button type="button" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">addToMyCart</button>
-<button type="button" (click)="backProductsPage()">back to all Products</button>
+        <li>{{book.subtitle}}</li>
+        <div *ngFor="let author of book.authors">
+            <p>{{author}}</p>
+        </div>
+        <li>{{book.authors}}</li>
+        <li>{{book.publisher}}</li>
+        <li>{{book.publishedDate}}</li>
+        <li>{{book.description}}</li>
+        <li>{{book.pageCount}}</li>
+        
+        
+        <button type="button" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">addToMyCart</button>
+        <button type="button" (click)="backProductsPage()">back to all Products</button>
+</div>
+
