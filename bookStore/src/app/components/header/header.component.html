@@ -2,9 +2,9 @@
 
 <div *ngIf="user; else UserNameDefault">
   <p class="profile"> Hello {{user.userName}}!</p>
-  <!-- <img id="imgProfile" [src]="user.imgUrl"> -->
   <img id="imgProfile" src="../../../assets/avatar5.png">
 </div>
+
 <ng-template #UserNameDefault>
   <p class="profile">Hello guest!</p>
   <img id="imgProfile" src="../../../assets/avatar2.png" />
@@ -15,33 +15,30 @@
     <h1 id="logoTitle">Bookmark</h1>
     <h3 id="logoText"> your favorite store</h3>
   </div>
+  <!-- logo-book -->
   <div class="stack">
     <div class="book"></div>
     <div class="book"></div>
     <div class="book"></div>
     <div class="book"></div>
   </div>
-  <!-- <div id="shape">b</div> -->
-
 </div>
 
+<!-- slide menu -->
 <div class="area"></div>
 <nav class="main-menu">
-
   <ul>
     <li>
       <a href="http://justinfarrow.com">
         <i class="fa fa-user fa-2x"></i>
         <a class="nav-text" [routerLink]="['/myAccount']">my account</a>
       </a>
-
     </li>
     <li class="has-subnav">
       <a href="#">
         <i class="fa fa-book fa-2x"></i>
         <a class="nav-text" [routerLink]="['/products']">products</a>
       </a>
-
     </li>
     <li class="has-subnav">
       <a href="#">
@@ -49,10 +46,7 @@
           <span class="badge badge-notify">{{countMyCard}}</span>
         </i>
         <a class="nav-text" [routerLink]="['/myCart']">my cart</a>
-
       </a>
-
     </li>
-
   </ul>
 </nav>

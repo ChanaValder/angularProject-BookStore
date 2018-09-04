@@ -29,6 +29,7 @@ export class ProductDetailsComponent implements OnInit {
 
   addToMyCart() {
     this.bookService.addBookToMyCart(this.book);
+    this.router.navigate(['/products']);
   }
   
   updateCount(count: number) {

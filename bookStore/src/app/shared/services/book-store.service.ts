@@ -70,7 +70,8 @@ export class BookStoreService {
     if(!isInMyCart)
     {
         book.id=bookList.length;
-        book['count']=1;
+        if(!book['count'])
+           book['count']=1;
         bookList.push(book);
     }
     localStorage.setItem("myCart", JSON.stringify(bookList));
