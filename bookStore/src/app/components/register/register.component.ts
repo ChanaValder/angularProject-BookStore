@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, ValidatorFn } from '@angular/forms';
-import { User } from '../../shared/models/User.model';
-import { BookStoreService } from '../../shared/services/book-store.service';
+import { User } from '../../shared/models/user.model';
 import { UserService } from '../../shared/services/user.service';
-import { Router } from '../../../../node_modules/@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -12,15 +11,15 @@ import { Router } from '../../../../node_modules/@angular/router';
 })
 export class RegisterComponent {
 
-  //----------------PROPERTIRS-------------------
   formGroup: FormGroup;
   obj: typeof Object = Object;
+
   filesToUpload: File;
 
-  //----------------CONSTRUCTOR------------------
   constructor(public userService: UserService,
-    public router: Router) {
-      this.filesToUpload = null;
+              public router: Router) {
+
+    this.filesToUpload = null;
 
     let formGroupConfig = {
       firstName: new FormControl("", this.createValidatorArr("firstName", 2, 15, /^[A-Za-z]+$/)),
@@ -32,13 +31,11 @@ export class RegisterComponent {
     this.formGroup = new FormGroup(formGroupConfig);
   }
 
-  //----------------METHODS-------------------
   submitRegister() {
     let person: User = this.formGroup.value;
     this.userService.registerUser(person);
     this.router.navigate(['/home']);
   }
-
 
   createValidatorArr(cntName: string, min: number, max: number, pattern?: RegExp): Array<ValidatorFn> {
     return [
@@ -48,12 +45,13 @@ export class RegisterComponent {
       f => f.value && f.value.length < min ? { "val": `${cntName} is min ${min} chars` } : null
     ];
   }
+  
   fileChangeEvent(event: any) {
     let files: any[];
     files = event.target.files;
     console.log(files);
     this.userService.uploadImage(files);
-}
+  }
 
 }
 

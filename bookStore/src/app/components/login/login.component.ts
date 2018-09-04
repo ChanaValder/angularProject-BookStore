@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, ValidatorFn } from '@angular/forms';
 import{BookStoreService} from '../../shared/services/book-store.service'
-import { User } from '../../shared/models/User.model';
+import { User } from '../../shared/models/user.model';
 import { UserService } from '../../shared/services/user.service';
-import { Router } from '../../../../node_modules/@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',

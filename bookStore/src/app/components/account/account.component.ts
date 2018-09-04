@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from '../../shared/services/user.service';
-import { User } from '../../shared/models/User.model';
+import { User } from '../../shared/models/user.model';
 import { BookStoreService } from '../../shared/services/book-store.service';
 
 @Component({

@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
-import { User } from '../models/User.model'
+import { User } from '../models/user.model'
 import {  Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
-import { Router } from '../../../../node_modules/@angular/router';
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  uploadImage(file: any): any {
-    this.httpClient.post(this.basicURL+"/upload",file).subscribe(p=>{alert(p)})
-  }
+  
   user: User;
   basicURL: string = "http://localhost:3500/api";
   subject = new Subject();
+  
   constructor(public httpClient: HttpClient,public router:Router) {
     this.user = null;
   }
@@ -40,6 +39,7 @@ export class UserService {
       });
   }
 
+  //return the user log-in or null
   checkUserLogin():User {
     return JSON.parse(localStorage.getItem('user'))
   }
@@ -47,6 +47,10 @@ export class UserService {
   logout() {
     localStorage.clear();
     this.subject.next(this.checkUserLogin());
+  }
+// uploud img profile user
+  uploadImage(file: any): any {
+    this.httpClient.post(this.basicURL+"/upload",file).subscribe(p=>{alert(p)})
   }
 
 }

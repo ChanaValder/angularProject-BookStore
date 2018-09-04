@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, Routes, ActivatedRoute } from '@angular/router';
 import { BookStoreService } from '../../shared/services/book-store.service';
-import { User } from '../../shared/models/User.model';
+import { User } from '../../shared/models/user.model';
 import { UserService } from '../../shared/services/user.service';
 import { VolumeInfo } from '../../shared/models/volum-info.model';
 

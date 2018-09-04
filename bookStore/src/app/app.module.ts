@@ -11,12 +11,12 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-import { BookStoreService } from '././shared/services/book-store.service'
+import { BookStoreService } from './shared/services/book-store.service'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { ProductPreviewComponent } from './components/product-preview/product-preview.component';
 import { UserService } from './shared/services/user.service';
-import { CartProductComponent } from '../app/components/cart-product/cart-product.component';
+import { CartProductComponent } from './components/cart-product/cart-product.component';
 import { routing } from './app.routing';
 
 
