@@ -60,32 +60,34 @@ text-overflow: ellipsis;
     font-size: 16px;
     color: #cc9900;
  }
+/* .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+    /* visibility: hidden; */
+    /* width: 120px;
+    background-color: black;
+    color:black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    /* position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+} */
+
+/* .tooltip:hover .tooltiptext {
+    visibility: visible;
+}  */ 
 
   
-  [data-tooltip]:hover:before, [data-tooltip]:hover:after {
-    display: block;
-    position: absolute;
-    font-size: 0.8em;
-    color: white;
-  }
-  [data-tooltip]:hover:before {
-    border-radius: 0.2em;
-    content: attr(title);
-    background-color: rgba(0, 0, 0, 0.9);
-    margin-top: -2.5em;
-    padding: 0.3em;
-  }
-  [data-tooltip]:hover:after {
-    content: '';
-    margin-top: -2.1em;
-    margin-left: 1em;
-    border-style: solid;
-    border-color: transparent;
-    border-top-color: rgba(0, 0, 0, 0.9);
-    border-width: 0.5em 0.5em 0 0.5em;
-  }
-  
+
   
  
  

@@ -1,11 +1,13 @@
-
-  <img  [src]='book.imageLinks["smallThumbnail"]' class="card-img-top">
-  <!-- <span class="glyphicon glyphicon-shopping-cart"></span> -->
-  <div class="card-body">
-      <div class="line"></div>
-  <h3  class="card-title text">{{book["title"]}}</h3>
-  <p  class="card-text text">{{book["subtitle"]}}</p>
-</div> 
-<a (click)="bookDetails()" ><span class="glyphicon glyphicon-tasks moreDetails" ></span></a>
-
+<img [src]='book.imageLinks["smallThumbnail"]' class="card-img-top">
+<!-- <span class="glyphicon glyphicon-shopping-cart"></span> -->
+<div class="card-body">
+  <div class="line"></div>
+  <h3 class="card-title text">{{book["title"]}}</h3>
+  <p class="card-text text">{{book["subtitle"]}}</p>
+  <a (click)="bookDetails()" ><span class="glyphicon glyphicon-tasks moreDetails" ></span></a>
+  <div class="tooltip">jjjjjjjj
+      <span class="tooltiptext">Tooltip text</span>
+    </div>
+</div>
+<!-- <a (click)="bookDetails()" ><span class="glyphicon glyphicon-tasks moreDetails" ></span></a> -->
 
