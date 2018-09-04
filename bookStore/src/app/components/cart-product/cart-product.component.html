@@ -5,7 +5,7 @@
 <div class="card-body">
         <h3 class="card-title text">{{book.title}} </h3>
         <p class="card-text text">{{book.subtitle}}</p>
-        <p>Qty: <input class="col-xs-2" type="number" [value]="book['count']" (click)="changeCountInCart($event.target.value)"> </p>
+        <p>Qty: <input  type="number" [value]="book['count']" (click)="changeCountInCart($event.target.value)"> </p>
        
 </div>
 <span class="glyphicon glyphicon-trash delete" (keyup)="removeBookMyCart()"></span>

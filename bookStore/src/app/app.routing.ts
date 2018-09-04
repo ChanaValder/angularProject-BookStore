@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './shared/auth.guard';
 import { AuthLogin } from './shared/auth.login';
+import { AuthProduct } from './shared/auto.product';
 
 
 
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
   ] },
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'productsDetails', component: ProductDetailsComponent},
+  { path: 'productsDetails', component: ProductDetailsComponent,canActivate:[AuthProduct]},
   { path: 'products', component: ProductsComponent },
   { path: 'myCart', component: CartComponent,canActivate: [AuthGuard] },
  
