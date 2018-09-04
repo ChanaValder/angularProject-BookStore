@@ -44,6 +44,9 @@
 
 
   #custom-search-input{
+    position: relative;
+    top: 8vh;
+    right: -42vw;
     padding: 3px;
     border: solid 1px #E4E4E4;
     border-radius: 6px;
@@ -73,4 +76,9 @@
 
 #custom-search-input .glyphicon-search{
     font-size: 23px;
+}
+#booksHeader{
+    left: 6vw;
+    position: relative;
+    top: -3vh;
 }
