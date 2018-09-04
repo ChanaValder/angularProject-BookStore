@@ -15,9 +15,9 @@
                 <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
             </div>
         </div>
-        <!-- <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+        <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
          <button type="button" (click)="upload()">Upload</button>
-        -->
+       
         <button type="submit" class="btn amado-btn mb-15" [disabled]="formGroup.invalid" >Register</button>
        
     </div>

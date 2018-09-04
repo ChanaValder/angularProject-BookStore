@@ -51,8 +51,8 @@ export class RegisterComponent {
   fileChangeEvent(event: any) {
     let files: any[];
     files = event.target.files;
-    console.log(files[0]);
-    this.userService.uploadImage(files[0]);
+    console.log(files);
+    this.userService.uploadImage(files);
 }
 
 }
