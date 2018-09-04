@@ -5,6 +5,8 @@
 <div class="card-body">
         <h3 class="card-title text">{{book.title}} </h3>
         <p class="card-text text">{{book.subtitle}}</p>
+        <p>count: <button (click)="addQtyToBookInMyCart()">-</button> {{book["count"]}}<button (click)="removeQtyToBookInMyCart()">+</button> </p>
+
 </div>
 <span class="glyphicon glyphicon-trash delete" (click)="removeBookMyCart()"></span>
 

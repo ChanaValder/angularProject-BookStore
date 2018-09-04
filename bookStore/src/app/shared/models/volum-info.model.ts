@@ -1,6 +1,7 @@
 import { ImageLinks } from "./image-link.model";
 
 export interface VolumeInfo {
+    id:number;
     title: string;
     subtitle: string;
     authors: string[];
