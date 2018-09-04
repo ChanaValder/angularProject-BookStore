@@ -297,7 +297,6 @@ height: 100%;
     margin-left: 196px;
     margin-top: -11vh;
   }
-<<<<<<< HEAD
   #divLogo{
     position: relative;
     right: 99px;
@@ -312,7 +311,6 @@ height: 100%;
     position: relative;
     top: 7px;
   }
-=======
   #custom-search-input{
     padding: 3px;
     border: solid 1px #E4E4E4;
@@ -344,5 +342,4 @@ height: 100%;
 #custom-search-input .glyphicon-search{
     font-size: 23px;
 }
->>>>>>> 4b74b647ca4aee3acb410c6704cc697aed337b53
   
