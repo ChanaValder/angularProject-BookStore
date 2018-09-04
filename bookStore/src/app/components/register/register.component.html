@@ -1,6 +1,6 @@
-
 <h2>Register</h2>
-<form action="/action_page.php" class="col-md-offset-3" [formGroup]="formGroup" (ngSubmit)="submitRegister()">
+
+<form  class="col-md-offset-3" [formGroup]="formGroup" (ngSubmit)="submitRegister()">
     <div class="imgcontainer">
         <img src="../../../assets/avatar2.png" alt="Avatar" class="avatar">
     </div>
@@ -15,11 +15,10 @@
                 <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
             </div>
         </div>
-        <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
-         <button type="button" (click)="upload()">Upload</button>
-       
-        <button type="submit" class="btn amado-btn mb-15" [disabled]="formGroup.invalid" >Register</button>
-       
+        <!-- <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+         <button type="button" (click)="upload()">Upload</button> -->
+
+        <button type="submit" class="btn register-btn mb-15" [disabled]="formGroup.invalid" >Register</button>
     </div>
 
 </form>
