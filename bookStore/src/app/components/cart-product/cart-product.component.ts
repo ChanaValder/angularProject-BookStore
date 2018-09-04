@@ -15,4 +15,15 @@ export class CartProductComponent {
     this.bookService.removeBookFromMyCart(this.book);
   }
 
+  changeCountInCart(count:number)
+  {
+    if(count==0)
+    {
+    this.removeBookMyCart();
+    return;
+     }
+    this.book["count"]=count;
+    this.bookService.updateCountInCart(this.book);
+  }
+
 }

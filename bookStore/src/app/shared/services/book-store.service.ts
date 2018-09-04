@@ -9,6 +9,7 @@ import { element } from '../../../../node_modules/@angular/core/src/render3/inst
   providedIn: 'root'
 })
 export class BookStoreService {
+ 
   
   subjectCart=new Subject();
   book:VolumeInfo;
@@ -47,11 +48,23 @@ export class BookStoreService {
     this.subjectCart.next(this.getMyCart())
    }
 
+   updateCountInCart(book: VolumeInfo): any {
+    let bookList:VolumeInfo[] = this.getMyCart();
+    bookList.forEach((element:VolumeInfo) => {
+      if(element.title==book.title&&book.subtitle==element.subtitle)
+      {
+        element["count"]=book["count"];
+      }
+    });
+    localStorage.setItem("myCart", JSON.stringify(bookList));
+
+  }
+
    addBookToMyCart(book:VolumeInfo)
    {
      let isInMyCart=0;
-    let bookList:VolumeInfo[] = this.getMyCart();
-    bookList.forEach((element:VolumeInfo) => {
+     let bookList:VolumeInfo[] = this.getMyCart();
+      bookList.forEach((element:VolumeInfo) => {
       if(element.title==book.title&&book.subtitle==element.subtitle)
       {
         element["count"]=element["count"]+1;
