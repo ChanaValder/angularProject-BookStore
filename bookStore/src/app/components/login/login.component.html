@@ -7,12 +7,12 @@
     </div>
 
     <div >
-        <div *ngFor="let x of obj.keys(formGroup.controls)" id="{{x}}">
+        <div  class="form-group has-error has-feedback nm" *ngFor="let x of obj.keys(formGroup.controls)" id="{{x}}">
             <label >
                 <b>{{x}}</b>
             </label>
             <input type="text" formControlName="{{x}}" placeholder="Enter {{x}}" name="uname">
-            <div *ngIf="formGroup.controls[x].errors&&formGroup.controls[x].touched">
+            <div class="help-block" *ngIf="formGroup.controls[x].errors&&formGroup.controls[x].touched">
                 <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
             </div>
         </div>

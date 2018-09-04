@@ -2,6 +2,7 @@
   body {font-family: Arial, Helvetica, sans-serif;}
   form {border: 3px solid #f1f1f1;
       width: 29vw;
+      padding: 36px;
     }
   
   input[type=text], input[type=password] {
@@ -97,5 +98,9 @@
   }
   h2[_ngcontent-c5] {
     margin-top: -83px;
+}
+
+h2[_ngcontent-c6] {
+    margin-top: -73px;
 }
   
