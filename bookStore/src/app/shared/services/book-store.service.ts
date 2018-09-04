@@ -3,6 +3,7 @@ import { Observable, Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { Book } from '../models/book.model';
 import { VolumeInfo } from '../models/volum-info.model';
+import { element } from '../../../../node_modules/@angular/core/src/render3/instructions';
 
 @Injectable({
   providedIn: 'root'
@@ -48,9 +49,21 @@ export class BookStoreService {
 
    addBookToMyCart(book:VolumeInfo)
    {
-    let bookList = this.getMyCart();
-    book['id']=bookList.length;
-    bookList.push(book);
+     let isInMyCart=0;
+    let bookList:VolumeInfo[] = this.getMyCart();
+    bookList.forEach((element:VolumeInfo) => {
+      if(element.title==book.title&&book.subtitle==element.subtitle)
+      {
+        element["count"]=element["count"]+1;
+        isInMyCart=1;
+      }
+    });
+    if(!isInMyCart)
+    {
+        book.id=bookList.length;
+        book['count']=1;
+        bookList.push(book);
+    }
     localStorage.setItem("myCart", JSON.stringify(bookList));
     this.subjectCart.next(this.getMyCart())
    }
