@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+
   date: number;
-  currentDate: string;
   footerMessage: string
+
   constructor() {
     this.date = new Date().getFullYear();
     this.footerMessage = "all rights reserved Chaya and Chany";

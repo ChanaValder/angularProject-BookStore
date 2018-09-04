@@ -8,6 +8,7 @@ import { VolumeInfo } from '../../shared/models/volum-info.model';
   styleUrls: ['./cart-product.component.css']
 })
 export class CartProductComponent {
+  
   @Input() book: VolumeInfo;
   constructor(public bookService: BookStoreService) { }
 

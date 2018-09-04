@@ -10,9 +10,9 @@ import { BookStoreService } from '../../shared/services/book-store.service';
 })
 export class AccountComponent {
   user: User;
-  constructor(public userService: UserService,public bookService:BookStoreService) {
+  constructor(public userService: UserService,
+              public bookService: BookStoreService) {
     this.user = this.userService.checkUserLogin();
-    console.log(this.user);
     this.userService.subject.subscribe(
       {
         next: (v: any) => {
@@ -23,7 +23,7 @@ export class AccountComponent {
 
   logout() {
     this.userService.logout();
-    debugger;
     this.bookService.subjectCart.next(this.bookService.getMyCart());
   }
+
 }

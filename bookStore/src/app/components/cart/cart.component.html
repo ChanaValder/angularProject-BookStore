@@ -1,16 +1,13 @@
-<h2>
-  My cart
-</h2>
+<h2> My cart</h2>
 
-<div class="scroll">
-<button *ngIf="myCartBook.length!=0" type="submit" class="btn amado-btn mb-15" (click)="cancelReservation()" >cancel reservation</button>
-<div *ngIf="myCartBook.length==0">your cart empty</div>
-<div class="container">
+<div >
+ <button *ngIf="myCartBook.length!=0" type="submit" class="btn amado-btn mb-15" (click)="removeAllMyCart()" >remove all</button>
+ <div *ngIf="myCartBook.length==0">your cart empty</div>
+ <div class="container">
     <div class="card-deck" >
-  <div *ngFor="let book of myCartBook"  class="card my-3" >
-    <app-cart-product [book]="book"></app-cart-product>
-  </div>
-  </div>
-  </div>
-
+        <div *ngFor="let book of myCartBook"  class="card my-3" >
+            <app-cart-product [book]="book"></app-cart-product>
+        </div>
+       </div>
+ </div>
 </div>

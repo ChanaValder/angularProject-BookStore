@@ -1,10 +1,11 @@
 .text{
     display: block;
     width: 160px;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
 .card-title{
     color:#fbb710
 }
@@ -20,7 +21,7 @@ text-overflow: ellipsis;
  }
  
  .delete{
-  position: relative;
+    position: relative;
     top: -43px;
     bottom: 0px;
     left: 223px;

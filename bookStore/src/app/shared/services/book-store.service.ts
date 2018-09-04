@@ -78,7 +78,7 @@ export class BookStoreService {
     this.subjectCart.next(this.getMyCart())
    }
 
-   cancelReservation()
+   removeAllMyCart()
    {
     localStorage.setItem("myCart", '');
     this.subjectCart.next(this.getMyCart())

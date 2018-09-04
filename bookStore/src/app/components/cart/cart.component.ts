@@ -21,9 +21,10 @@ export class CartComponent implements OnInit {
         }
       })
   }
-  cancelReservation()
+
+  removeAllMyCart()
   {
-    this.bookService.cancelReservation();
+    this.bookService.removeAllMyCart();
   }
 
 }

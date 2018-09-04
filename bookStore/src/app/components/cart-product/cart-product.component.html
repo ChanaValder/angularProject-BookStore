@@ -1,12 +1,11 @@
-
-
 <img class="card-img-top" src="../../../assets/avatar2.png" />
 
 <div class="card-body">
-        <h3 class="card-title text">{{book.title}} </h3>
-        <p class="card-text text">{{book.subtitle}}</p>
-        <p>Qty: <input  type="number" [value]="book['count']" (click)="changeCountInCart($event.target.value)"> </p>
-       
+    <h3 class="card-title text">{{book.title}} </h3>
+    <p class="card-text text">{{book.subtitle}}</p>
+    <p>Qty: 
+        <input  type="number" [value]="book['count']" (click)="changeCountInCart($event.target.value)"> 
+    </p>   
 </div>
 <span class="glyphicon glyphicon-trash delete" (click)="removeBookMyCart()"></span>
 

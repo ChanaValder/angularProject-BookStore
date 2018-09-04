@@ -3,40 +3,14 @@
     margin: 14px;
     width: 30rem;
 }
+
 .cardProduct:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
-
-
-  @media (min-width: 0) {
-    .card-deck .card {
-      flex: 0 0 calc(100% - 30px);
-    }
-  }
-  @media (min-width: 576px) {
-    .card-deck .card {
-      flex: 0 0 calc(50% - 30px);
-    }
-  }
-  @media (min-width: 768px) {
-    .card-deck .card {
-      flex: 0 0 calc(33.3333333333% - 30px);
-    }
-  }
-  @media (min-width: 992px) {
-    .card-deck .card {
-        flex: 0 0 calc(28% - 10px);
-    }
-  }
-  @media (min-width: 1200px) {
-    .card-deck .card {
-      flex: 0 0 calc(20% - 30px);
-    }
-  }
   .card{
     height: 60vh;
   }
+
   button {
     color: white;
     padding: 14px 20px;
@@ -54,9 +28,11 @@ button:hover {
     width: 160px;
     display: block;
 }
+
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
+
 .amado-btn {
     display: inline-block;
     min-width: 160px;
@@ -70,9 +46,11 @@ button:hover {
     background-color: #212121;
     font-weight: 400;
 }
+
 .mb-15 {
     margin-bottom: 15px !important;
 }
+
 .btn {
     display: inline-block;
     font-weight: 400;
