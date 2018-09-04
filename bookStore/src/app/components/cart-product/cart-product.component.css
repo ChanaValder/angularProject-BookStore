@@ -1,6 +1,6 @@
 .text{
     display: block;
-   width: 100%;;
+    width: 160px;
 overflow: hidden;
 white-space: nowrap;
 text-overflow: ellipsis;
@@ -20,7 +20,7 @@ text-overflow: ellipsis;
  }
  
  .delete{
-    left: 250px;
+  left: 170px;
     color: #cc9900;
  }
 
