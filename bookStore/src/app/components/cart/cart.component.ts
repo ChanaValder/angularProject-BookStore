@@ -20,5 +20,9 @@ export class CartComponent implements OnInit {
         }
       })
   }
+  cancelReservation()
+  {
+    
+  }
 
 }

@@ -26,7 +26,8 @@
 
 
 <div class="col-md-6 col-xs-6 ">
-        <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
+        <!-- <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'> -->
+        <img id="imgProfile" src="../../../assets/book6.jpg" />
      </div>
 <div class="col-md-6 col-xs-6 ">
     <div class="single_product_desc">
@@ -40,15 +41,15 @@
 
                 <li>{{book.subtitle}}</li>
                 <div *ngIf="book.authors">
+                        <h4>authors</h4>
                     <div *ngFor="let author of book.authors">
                         <p>{{author}}</p>
                     </div>
                 </div>
-                <li>{{book.authors}}</li>
-                <li>{{book.publisher}}</li>
-                <li>{{book.publishedDate}}</li>
-                <li>{{book.description}}</li>
-                <li>{{book.pageCount}}</li>
+                <li><h4>publisher</h4>{{book.publisher}}</li>
+                <li><h4>publishedDate</h4>{{book.publishedDate}}</li>
+                <li><h4>description</h4>{{book.description}}</li>
+                <li><h4>pageCount</h4>{{book.pageCount}}</li>
             </ul>
         </div>
 
@@ -56,6 +57,7 @@
         <form class="cart clearfix" method="post">
             <div class="cart-btn d-flex mb-50">
                 <p>Qty</p>
+
                 <div class="quantity">
                     <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) ) effect.value--;return false;">
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -66,8 +68,14 @@
                     </span>
                 </div>
             </div>
-            <button type="button" class="btn amado-btn" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">Add to cart</button>
-            <button type="button" class="btn amado-btn" (click)="backProductsPage()">back to all Products</button>
+            <button type="button" class="btn amado-btn mb-15" (click)="addToMyCart()" [disabled]="!user" >Add to cart</button>
+            <!-- <button type="submit" name="addtocart" value="5" class="btn amado-btn" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">Add to cart</button> -->
+            <!-- <button type="button" class="btn amado-btn" (click)="backProductsPage()">back to all Products</button> -->
+                 <p class="back">
+                     back to all Products
+                  
+                      <span class="glyphicon glyphicon-share-alt back" (click)="backProductsPage()"></span>
+                  </p>
         </form>
 
     </div>
