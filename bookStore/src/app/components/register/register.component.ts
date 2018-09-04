@@ -45,6 +45,10 @@ export class RegisterComponent {
       f => f.value && f.value.length < min ? { "val": `${cntName} is min ${min} chars` } : null
     ];
   }
+  onFileChanged(event: any) {
+    let files: any[];
+    files = event.target.files;
+    console.log(files[0].name);
 }
-
+}
 
