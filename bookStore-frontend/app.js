@@ -90,3 +90,47 @@ function checkPerson(person) {
     return true;
 
 }
+
+
+const handleError = (err, res) => {
+    console.log("handle err");
+    res
+        .status(500)
+        .contentType("text/plain")
+        .end("Oops! Something went wrong!");
+};
+
+app.post("/api/upload", upload.single("file" /* name attribute of <file> element in your form */),
+    (req, res) => {
+        console.log("upload");
+        console.log(__dirname);  
+        const tempPath = req.file.path;
+        console.log(tempPath);
+        const newFilename = `${uuidv4()}.JPG`;
+        console.log(newFilename);
+        const targetPath = path.join(__dirname, `./uploads/${newFilename}`);
+        console.log(targetPath);
+        fs.rename(tempPath, targetPath, err => {
+            if (err)
+                return handleError(err, res);
+            console.log("rename");
+            res.status(200).send({ newFilename: newFilename });
+        });
+    });
+
+const basePath = path.join(__dirname);
+
+app.get(`/uploads`, (req, res) => {
+    let fileName = req.query.fileName;
+    res.sendFile(`${basePath}/uploads/${fileName}`);
+});
+
+// Assuming that 'path/file.txt' is a regular file.
+removeImage=(fileName)=>{
+    fs.unlink(`${basePath}/uploads/${fileName}`, (err) => {
+        if (err) throw err;
+        console.log('path/file.txt was deleted');
+      });
+}
+
+
