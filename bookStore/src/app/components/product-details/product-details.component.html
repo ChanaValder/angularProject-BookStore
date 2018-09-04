@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
 <div class="col-md-6 col-xs-6 ">
    <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
 </div>
@@ -19,4 +19,56 @@
         <button type="button" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">addToMyCart</button>
         <button type="button" (click)="backProductsPage()">back to all Products</button>
 </div>
+</div> -->
+
+
+
+
+
+<div class="col-md-6 col-xs-6 ">
+        <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
+     </div>
+<div class="col-md-6 col-xs-6 ">
+    <div class="single_product_desc">
+        <!-- Product Meta Data -->
+        <div class="product-meta-data">
+                <h2>{{book.title}}</h2>
+        </div>
+
+        <div class="short_overview my-5">
+            <ul>
+
+                <li>{{book.subtitle}}</li>
+                <div *ngIf="book.authors">
+                    <div *ngFor="let author of book.authors">
+                        <p>{{author}}</p>
+                    </div>
+                </div>
+                <li>{{book.authors}}</li>
+                <li>{{book.publisher}}</li>
+                <li>{{book.publishedDate}}</li>
+                <li>{{book.description}}</li>
+                <li>{{book.pageCount}}</li>
+            </ul>
+        </div>
+
+        <!-- Add to Cart Form -->
+        <form class="cart clearfix" method="post">
+            <div class="cart-btn d-flex mb-50">
+                <p>Qty</p>
+                <div class="quantity">
+                    <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) ) effect.value--;return false;">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="1">
+                    <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+            <button type="button" class="btn amado-btn" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">Add to cart</button>
+            <button type="button" class="btn amado-btn" (click)="backProductsPage()">back to all Products</button>
+        </form>
+
+    </div>
 </div>
