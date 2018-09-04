@@ -71,9 +71,11 @@ h2{
     background-color: #212121;
     font-weight: 400;
 }
+
 .mb-15 {
     margin-bottom: 15px !important;
 }
+
 .btn {
     display: inline-block;
     font-weight: 400;
