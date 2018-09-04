@@ -34,7 +34,7 @@ img{
 }
 .text{
     display: block;
-   width: 250px;
+    width: 100%;
 overflow: hidden;
 white-space: nowrap;
 text-overflow: ellipsis;

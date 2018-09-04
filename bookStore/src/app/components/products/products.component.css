@@ -38,4 +38,7 @@
       flex: 0 0 calc(20% - 30px);
     }
   }
+  .card{
+    height: 60vh;
+  }
   
