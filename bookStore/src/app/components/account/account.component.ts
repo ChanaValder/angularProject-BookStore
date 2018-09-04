@@ -23,6 +23,7 @@ export class AccountComponent {
 
   logout() {
     this.userService.logout();
+    debugger;
     this.bookService.subjectCart.next(this.bookService.getMyCart());
   }
 }

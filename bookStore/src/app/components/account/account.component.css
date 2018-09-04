@@ -1,6 +1,6 @@
 #logout{
-    left: 90%;
-    top: -21px;
+    left: 88.5%;
+    top: -12px;
     position: relative;
 }
 #login{
@@ -12,4 +12,7 @@
     position: relative;
     left: 95%;
     top: -33px;
+}
+ul {
+    list-style-type: none;
 }

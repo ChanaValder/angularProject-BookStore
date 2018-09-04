@@ -13,16 +13,12 @@ export class CartComponent implements OnInit {
      this.myCartBook = this.bookService.getMyCart(); }
 
   ngOnInit() {
-    this.bookService.subject.subscribe(
+    this.bookService.subjectCart.subscribe(
       {
         next: (v: any) => {
           this.myCartBook = v;
         }
       })
-  
-
-
-
   }
 
 }

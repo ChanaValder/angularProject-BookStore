@@ -12,3 +12,6 @@
     width: 100%;
     overflow: auto;
   }
+  .container-fluid{
+    margin-bottom: 6%;
+  }

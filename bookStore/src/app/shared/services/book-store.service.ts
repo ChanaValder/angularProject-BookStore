@@ -8,18 +8,22 @@ import { VolumeInfo } from '../models/volum-info.model';
   providedIn: 'root'
 })
 export class BookStoreService {
-
+  
   subjectCart=new Subject();
-  subject=new Subject();
   book:VolumeInfo;
   basicURL:string="http://localhost:3500/api";
   bookList:Book[];
- 
+  search:string="a";
+  //check if use search and go to product detail and want to go back with search
+  statusSearch: number;
   constructor(public httpClient:HttpClient) {
     
    }
-   getBooks(searchKey):Observable<Book[]>{
-  
+
+   getBooks(searchKey?:string):Observable<Book[]>{
+    if(!searchKey)
+      searchKey="a";
+    this.search=searchKey;
     return this.httpClient.get<Book[]>(`https://www.googleapis.com/books/v1/volumes?q=${searchKey}&maxResults=40&fields=items(saleInfo%2FlistPrice%2CvolumeInfo(authors%2Cdescription%2CimageLinks(smallThumbnail%2Cthumbnail)%2Clanguage%2CmainCategory%2CpageCount%2CpublishedDate%2Cpublisher%2Csubtitle%2Ctitle))`)
    }
    
@@ -33,23 +37,22 @@ export class BookStoreService {
    {
     localStorage.clear();
    }
+
    removeBookFromMyCart(book:VolumeInfo)
    {
     let bookList:any = this.getMyCart();
     bookList.splice(book['id'],1);
     localStorage.setItem("myCart", JSON.stringify(bookList));
-    this.subject.next(this.getMyCart())
+    this.subjectCart.next(this.getMyCart())
    }
 
    addBookToMyCart(book:VolumeInfo)
    {
-   
     let bookList = this.getMyCart();
     book['id']=bookList.length;
     bookList.push(book);
     localStorage.setItem("myCart", JSON.stringify(bookList));
-    this.subject.next(this.getMyCart())
-
+    this.subjectCart.next(this.getMyCart())
    }
 
  

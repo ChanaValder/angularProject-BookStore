@@ -22,11 +22,9 @@ export class UserService {
         this.user = res;
       }, err => {
         this.router.navigate(['/myAccount/register']);
-
       }
     )
   }
-
 
   registerUser(newUser: User): void {
     let url: string = this.basicURL + "/register";
@@ -46,7 +44,6 @@ export class UserService {
   logout() {
     localStorage.clear();
     this.subject.next(this.checkUserLogin());
-    
   }
 
 }

@@ -25,12 +25,12 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   addToMyCart() {
-    //search book
     this.bookService.addBookToMyCart(this.book);
   }
 
 
   backProductsPage() {
+    this.bookService.statusSearch=1;
     this.router.navigate(['/products']);
   }
 

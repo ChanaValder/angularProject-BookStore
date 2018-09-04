@@ -1,5 +1,6 @@
 <h2>
   myAccount</h2>
+  <ul>
 <li href="#mySignin" data-toggle="modal" *ngIf="!user" >
   <a  [routerLink]="['/myAccount/login']" id="login">login</a>
 </li>
@@ -12,3 +13,4 @@
 <div class="inner-outlet">
   <router-outlet></router-outlet>
 </div>
+</ul>
