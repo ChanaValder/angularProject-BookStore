@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, Routes, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { BookStoreService } from '../../shared/services/book-store.service';
 import { User } from '../../shared/models/user.model';
 import { UserService } from '../../shared/services/user.service';
@@ -11,12 +11,15 @@ import { VolumeInfo } from '../../shared/models/volum-info.model';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
+
   book: VolumeInfo;
   titleBook: string
   user: User;
-  constructor(private route: ActivatedRoute, public bookService: BookStoreService,
-    public userService: UserService, public router: Router) {
-    this.user = this.userService.checkUserLogin();
+
+  constructor(private route: ActivatedRoute,
+              public bookService: BookStoreService,
+              public userService: UserService,
+              public router: Router) {
     this.book = this.bookService.book;
   }
 
@@ -27,13 +30,13 @@ export class ProductDetailsComponent implements OnInit {
   addToMyCart() {
     this.bookService.addBookToMyCart(this.book);
   }
-  updateCount(count:number)
-  {
-    this.book["count"]=count;
+  
+  updateCount(count: number) {
+    this.book["count"] = count;
   }
 
   backProductsPage() {
-    this.bookService.statusSearch=1;
+    this.bookService.statusSearch = 1;
     this.router.navigate(['/products']);
   }
 

@@ -4,11 +4,11 @@
 
 
 
-<div class="col-md-6 col-xs-6 ">
+<div class="col-md-6 col-xs-6 div ">
         <!-- <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'> -->
         <img id="imgProfile" src="../../../assets/book6.jpg" />
      </div>
-<div class="col-md-6 col-xs-6 ">
+<div class="col-md-6 col-xs-6 div ">
     <div class="single_product_desc">
         <!-- Product Meta Data -->
         <div class="product-meta-data">
@@ -50,10 +50,10 @@
             <button type="button" class="btn amado-btn mb-15" (click)="addToMyCart()" [disabled]="!user" >Add to cart</button>
             <!-- <button type="submit" name="addtocart" value="5" class="btn amado-btn" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">Add to cart</button> -->
             <!-- <button type="button" class="btn amado-btn" (click)="backProductsPage()">back to all Products</button> -->
-                 <p class="back">
+                 <p class="back" (click)="backProductsPage()">
                      back to all Products
                   
-                      <span class="glyphicon glyphicon-share-alt back" (click)="backProductsPage()"></span>
+                      <span class="glyphicon glyphicon-share-alt back" ></span>
                   </p>
         </form>
 
