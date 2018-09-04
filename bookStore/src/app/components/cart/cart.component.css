@@ -33,7 +33,7 @@
   }
   @media (min-width: 992px) {
     .card-deck .card {
-      flex: 0 0 calc(25% - 30px);
+        flex: 0 0 calc(28% - 10px);
     }
   }
   @media (min-width: 1200px) {
