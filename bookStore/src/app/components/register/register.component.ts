@@ -15,10 +15,13 @@ export class RegisterComponent {
   //----------------PROPERTIRS-------------------
   formGroup: FormGroup;
   obj: typeof Object = Object;
+  filesToUpload: File;
 
   //----------------CONSTRUCTOR------------------
   constructor(public userService: UserService,
     public router: Router) {
+      this.filesToUpload = null;
+
     let formGroupConfig = {
       firstName: new FormControl("", this.createValidatorArr("firstName", 2, 15, /^[A-Za-z]+$/)),
       lastName: new FormControl("", this.createValidatorArr("lastName", 2, 15, /^[A-Za-z]+$/)),
@@ -45,10 +48,12 @@ export class RegisterComponent {
       f => f.value && f.value.length < min ? { "val": `${cntName} is min ${min} chars` } : null
     ];
   }
-  onFileChanged(event: any) {
+  fileChangeEvent(event: any) {
     let files: any[];
     files = event.target.files;
-    console.log(files[0].name);
+    console.log(files[0]);
+    this.userService.uploadImage(files[0]);
 }
+
 }
 

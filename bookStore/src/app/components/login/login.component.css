@@ -1,7 +1,10 @@
  body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;
     width: 29vw;
-    padding: 36px;}
+    padding: 30px;
+    position: relative;
+    bottom: 22vh;
+    left: 6vw;}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -51,7 +54,9 @@ span.psw {
 }
 h2{
     
-    margin-left: 412px;
+    margin-left: 38vw;
+    top: -14vh;
+    position: relative;
 }
 .main-content-wrapper .header-area .amado-btn-group .amado-btn {
     width: 160px;

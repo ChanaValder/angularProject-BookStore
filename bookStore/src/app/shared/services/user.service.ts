@@ -7,6 +7,9 @@ import { Router } from '../../../../node_modules/@angular/router';
   providedIn: 'root'
 })
 export class UserService {
+  uploadImage(file: File): any {
+    this.httpClient.post(this.basicURL+"/upload",file).subscribe(p=>{alert(p)})
+  }
   user: User;
   basicURL: string = "http://localhost:3500/api";
   subject = new Subject();

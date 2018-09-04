@@ -1,8 +1,10 @@
 
   body {font-family: Arial, Helvetica, sans-serif;}
   form {border: 3px solid #f1f1f1;
-      width: 29vw;
-      padding: 36px;
+    width: 35vw;
+    position: relative;
+    bottom: 0vh;
+    left: 4vw;
     }
   
   input[type=text], input[type=password] {
