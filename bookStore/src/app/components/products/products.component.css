@@ -8,11 +8,7 @@
     height: 350px;
 }
 
-.scroll {
-    height: 500px;
-    width: 100%;
-    overflow: auto;
-  }
+
   @media (min-width: 0) {
     .card-deck .card {
       flex: 0 0 calc(100% - 30px);

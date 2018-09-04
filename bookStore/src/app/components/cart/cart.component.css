@@ -7,14 +7,7 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.scroll {
-    height: 500px;
-    width: 100%;
-    overflow: auto;
-  }
-  .container-fluid{
-    margin-bottom: 6%;
-  }
+
 
   @media (min-width: 0) {
     .card-deck .card {

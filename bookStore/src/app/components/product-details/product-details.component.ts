@@ -27,7 +27,10 @@ export class ProductDetailsComponent implements OnInit {
   addToMyCart() {
     this.bookService.addBookToMyCart(this.book);
   }
-
+  updateCount(count:number)
+  {
+    this.book["count"]=count;
+  }
 
   backProductsPage() {
     this.bookService.statusSearch=1;

@@ -1,25 +1,4 @@
-<!-- <div>
-<div class="col-md-6 col-xs-6 ">
-   <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
-</div>
-<div class="col-md-6 col-xs-6 ">
-        <li>{{titleBook}}</li>
 
-        <li>{{book.subtitle}}</li>
-        <div *ngFor="let author of book.authors">
-            <p>{{author}}</p>
-        </div>
-        <li>{{book.authors}}</li>
-        <li>{{book.publisher}}</li>
-        <li>{{book.publishedDate}}</li>
-        <li>{{book.description}}</li>
-        <li>{{book.pageCount}}</li>
-        
-        
-        <button type="button" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">addToMyCart</button>
-        <button type="button" (click)="backProductsPage()">back to all Products</button>
-</div>
-</div> -->
 
 
 
@@ -62,7 +41,7 @@
                     <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) ) effect.value--;return false;">
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </span>
-                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="1">
+                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="1" (keyup)="updateCount($event.target.value)">
                     <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;">
                         <i class="fa fa-caret-up" aria-hidden="true"></i>
                     </span>
