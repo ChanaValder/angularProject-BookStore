@@ -3,10 +3,14 @@
 <div class="scroll">
   <h1>my books</h1>
   
-<div id="contact" class="container-fluid bg-grey" >
-  <div *ngFor="let book of bookList"  class="col-md-6 col-xs-2 col-md-offset-2 " class="cardProduct card divCard" >
-    <app-product-preview [book]="book.volumeInfo"></app-product-preview>
+  <div class="container">
+    <div class="card-deck" >
+  <div *ngFor="let book of bookList" >
+    <div *ngIf="book.volumeInfo.imageLinks" class="card my-3">
+       <app-product-preview [book]="book.volumeInfo"></app-product-preview>
+    </div>
   </div>
+</div>
 </div>
 </div>
 

@@ -3,14 +3,12 @@
 </h2>
 
 <div class="scroll">
-
-    
-
 <div *ngIf="myCartBook.length==0">your cart empty</div>
-
-<div id="contact" class="container-fluid bg-grey" >
-  <div *ngFor="let book of myCartBook" class="col-md-6 col-xs-2 col-md-offset-2 " class="cardProduct card divCard" >
+<div class="container">
+    <div class="card-deck" >
+  <div *ngFor="let book of myCartBook"  class="card my-3" >
     <app-cart-product [book]="book"></app-cart-product>
   </div>
-</div>
+  </div>
+  </div>
 </div>

@@ -15,9 +15,10 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
    if(this.bookStoreService.statusSearch==1)
    {
-  document.getElementById("search").setAttribute("value",this.bookStoreService.search)
-       this.bookStoreService.getBooks(this.bookStoreService.search).subscribe(res => { this.bookList = res["items"]; }, err => { });
-    } else this.bookStoreService.getBooks().subscribe(res => { this.bookList = res["items"]; }, err => { });
+      document.getElementById("search").setAttribute("value",this.bookStoreService.search)
+      this.bookStoreService.getBooks(this.bookStoreService.search).subscribe(res => { this.bookList = res["items"]; }, err => { });
+    } 
+    else this.bookStoreService.getBooks().subscribe(res => { this.bookList = res["items"]; }, err => { });
    this.bookStoreService.statusSearch=0;
   }
   
