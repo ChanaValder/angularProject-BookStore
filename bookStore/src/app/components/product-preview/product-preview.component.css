@@ -34,7 +34,7 @@ img{
 }
 .text{
     display: block;
-    width: 100%;
+    width: 160px;
 overflow: hidden;
 white-space: nowrap;
 text-overflow: ellipsis;
@@ -53,8 +53,11 @@ text-overflow: ellipsis;
     width: 110%;
  }
  
- .delete{
-    left: 211px;
+ .moreDetails{
+    top: 34px;
+    bottom: 0px;
+    left: 265px;
+    font-size: 16px;
     color: #cc9900;
  }
 
@@ -83,31 +86,6 @@ text-overflow: ellipsis;
     border-width: 0.5em 0.5em 0 0.5em;
   }
   
-  @media (min-width: 0) {
-    .card-deck .card {
-      flex: 0 0 calc(100% - 30px);
-    }
-  }
-  @media (min-width: 576px) {
-    .card-deck .card {
-      flex: 0 0 calc(50% - 30px);
-    }
-  }
-  @media (min-width: 768px) {
-    .card-deck .card {
-      flex: 0 0 calc(33.3333333333% - 30px);
-    }
-  }
-  @media (min-width: 992px) {
-    .card-deck .card {
-      flex: 0 0 calc(25% - 30px);
-    }
-  }
-  @media (min-width: 1200px) {
-    .card-deck .card {
-      flex: 0 0 calc(20% - 30px);
-    }
-  }
   
  
  
