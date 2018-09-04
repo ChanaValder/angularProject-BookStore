@@ -3,6 +3,7 @@
 </h2>
 
 <div class="scroll">
+<button *ngIf="myCartBook.length!=0" type="submit" class="btn amado-btn mb-15" (click)="cancelReservation()" >cancel reservation</button>
 <div *ngIf="myCartBook.length==0">your cart empty</div>
 <div class="container">
     <div class="card-deck" >
@@ -11,5 +12,5 @@
   </div>
   </div>
   </div>
-  <button type="submit" class="btn amado-btn mb-15" (click)="cancelReservation()" >cancel reservation</button>
+
 </div>
