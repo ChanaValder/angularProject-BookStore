@@ -6,7 +6,7 @@
           <div class="col-md-6">
               <div id="custom-search-input">
                   <div class="input-group col-md-12">
-                      <input type="text" class="form-control input-lg" placeholder="Search book" (keyup)=search($event.target.value) />
+                      <input id="search" type="text" class="form-control input-lg" placeholder="Search book" (keyup)=search($event.target.value) />
                       <span class="input-group-btn">
                           <button class="btn btn-info btn-lg" type="button">
                               <i class="glyphicon glyphicon-search"></i>
@@ -18,7 +18,7 @@
     </div>
   </div>
 <div class="scroll">
-  <h1>my books</h1>
+  <h1 id="booksHeader">Our books</h1>
   
   <div class="container">
     <div class="card-deck" >

@@ -1,7 +1,8 @@
-<div class="col-md-6">
+<div>
+<div class="col-md-6 col-xs-6 ">
    <img *ngIf="book.imageLinks['smallThumbnail']" [src]='book.imageLinks["smallThumbnail"]'>
 </div>
-<div>
+<div class="col-md-6 col-xs-6 ">
         <li>{{titleBook}}</li>
 
         <li>{{book.subtitle}}</li>
@@ -18,4 +19,4 @@
         <button type="button" (click)="addToMyCart()" name="addMyCart" [disabled]="!user">addToMyCart</button>
         <button type="button" (click)="backProductsPage()">back to all Products</button>
 </div>
-
+</div>
