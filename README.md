@@ -24,6 +24,5 @@ npm start
 ```
 
 ##### See live demo:
-```bash
-heroku git:clone -a book-store-angular-28249/bookStore
-```
+https://book-store-angular-28249.herokuapp.com/bookStore
+
