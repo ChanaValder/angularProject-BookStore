@@ -41,11 +41,13 @@
 
   .card{
     height: 60vh;
+    position: relative;
+    top: -12vh;
   }
 
   #custom-search-input{
     position: relative;
-    top: 8vh;
+    top: -1vh;
     right: -42vw;
     padding: 3px;
     border: solid 1px #E4E4E4;
@@ -79,7 +81,9 @@
 }
 
 #booksHeader{
+    font-size: 40px;
+    font-family: 'Shrikhand', cursive;
     left: 6vw;
     position: relative;
-    top: -3vh;
+    top: -12vh;
 }

@@ -34,7 +34,7 @@
       transform: translate3d(100%, 0, 0);
     }
   }
-  
+
   #nameStore{
     position: absolute;
     top: 147px;
@@ -42,6 +42,8 @@
     z-index: 100;
     color: #ffc107;
     font-size: 41px;
+    font-family: 'Shrikhand', cursive;
+    
   }
 
   #adressStore{

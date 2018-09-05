@@ -1,10 +1,13 @@
 img{
-    height: 69vh;
+    height: 68vh;
     margin-left: 141px;
+    position: relative;
+    width: 28vw;
 }
 
 .div{
     margin-top: -3vh;
+    line-height: 1.9;
 }
 
 /* @media (min-width: 992px)
@@ -112,4 +115,12 @@ ul {
 
 .single_product_desc{
     margin-bottom: 11vh !important;
+}
+
+h4{
+    color: #fbb710;
+}
+
+.product-meta-data{
+    font-family: 'Shrikhand', cursive;
 }

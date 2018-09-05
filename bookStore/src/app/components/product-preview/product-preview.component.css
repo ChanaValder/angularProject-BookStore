@@ -34,7 +34,8 @@ img{
 .moreDetails{
     top: 34px;
     bottom: 0px;
-    left: 265px;
+    left: 12vw;
     font-size: 16px;
-    color: #cc9900;
+    position: relative;
+    color: #cc9900 !important;
  }

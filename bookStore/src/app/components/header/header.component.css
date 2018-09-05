@@ -289,7 +289,7 @@ height: 100%;
   #titleLogo{
     margin-left: 292px;
     font-size: 20px;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Gloria Hallelujah', cursive !important;
   }
 
   .stack{
