@@ -10,14 +10,14 @@ this project bookStore use :
 
 ## Run this app in dev mode- client side:
 ```bash
-clone ''
+clone 'https://github.com/chayawaxstock/angularProject-BookStore.git'
 cd bookStore
 npm i
 ng serve --open
 ```
 ## Run this app in dev mode- server side:
 ```bash
-clone ''
+clone 'https://github.com/chayawaxstock/angularProject-BookStore.git'
 cd bookStore-frontend
 npm i
 npm start
