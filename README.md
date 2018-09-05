@@ -25,5 +25,5 @@ npm start
 
 ##### See live demo:
 ```bash
-https://saldat-angular.herokuapp.com/AuthRout
+heroku git:clone -a book-store-angular-28249/bookStore
 ```
