@@ -38,7 +38,7 @@ export class ProductDetailsComponent implements OnInit {
 
   backProductsPage() {
     this.bookService.statusSearch = 1;
-    this.router.navigate(['/products']);
+    this.router.navigate(['/bookStore/products']);
   }
 
 }

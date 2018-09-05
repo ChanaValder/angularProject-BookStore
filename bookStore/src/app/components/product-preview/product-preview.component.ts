@@ -21,7 +21,7 @@ export class ProductPreviewComponent {
 
   bookDetails() {
     this.bookService.book = this.book;
-    this.router.navigate(['/productsDetails']);
+    this.router.navigate(['/bookStore/productsDetails']);
   }
 
 

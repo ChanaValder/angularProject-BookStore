@@ -32,7 +32,7 @@ export class LoginComponent {
     else {
       this.user = this.formGroup.value;
       this.userService.login(this.user);
-      this.router.navigate(['/home']);
+      this.router.navigate(['/bookStore/home']);
     }
   }
 

@@ -12,15 +12,15 @@ import { AuthProduct } from './shared/auto.product';
 
 const appRoutes: Routes = [
   {
-    path: 'myAccount', component: AccountComponent, children: [
+    path: 'bookStore/myAccount', component: AccountComponent, children: [
       { path: 'login', component: LoginComponent, canActivate: [AuthLogin] },
       { path: 'register', component: RegisterComponent, canActivate: [AuthLogin] },
     ]
   },
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'productsDetails', component: ProductDetailsComponent, canActivate: [AuthProduct] },
-  { path: 'products', component: ProductsComponent },
-  { path: 'myCart', component: CartComponent, canActivate: [AuthGuard] },
+  { path: 'bookStore', component: HomeComponent },
+  { path: 'bookStore/home', component: HomeComponent },
+  { path: 'bookStore/productsDetails', component: ProductDetailsComponent, canActivate: [AuthProduct] },
+  { path: 'bookStore/products', component: ProductsComponent },
+  { path: 'bookStore/myCart', component: CartComponent, canActivate: [AuthGuard] },
 ];
 export const routing = RouterModule.forRoot(appRoutes);

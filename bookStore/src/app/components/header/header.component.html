@@ -31,13 +31,13 @@
     <li>
       <a href="http://justinfarrow.com">
         <i class="fa fa-user fa-2x"></i>
-        <a class="nav-text" [routerLink]="['/myAccount']">my account</a>
+        <a class="nav-text" [routerLink]="['/bookStore/myAccount']">my account</a>
       </a>
     </li>
     <li class="has-subnav">
       <a href="#">
         <i class="fa fa-book fa-2x"></i>
-        <a class="nav-text" [routerLink]="['/products']">products</a>
+        <a class="nav-text" [routerLink]="['/bookStore/products']">products</a>
       </a>
     </li>
     <li class="has-subnav">
@@ -45,7 +45,7 @@
         <i class="fa fa-shopping-cart fa-2x">
           <span class="badge badge-notify">{{countMyCard}}</span>
         </i>
-        <a class="nav-text" [routerLink]="['/myCart']">my cart</a>
+        <a class="nav-text" [routerLink]="['/bookStore/myCart']">my cart</a>
       </a>
     </li>
   </ul>

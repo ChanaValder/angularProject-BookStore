@@ -23,7 +23,7 @@ export class UserService {
         this.subject.next(this.checkUserLogin());
         this.user = res;
       }, err => {
-        this.router.navigate(['/myAccount/register']);
+        this.router.navigate(['/bookStore/myAccount/register']);
       }
     )
   }

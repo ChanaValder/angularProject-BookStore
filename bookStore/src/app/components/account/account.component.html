@@ -1,13 +1,13 @@
 
   <ul>
 <li href="#mySignin" data-toggle="modal" *ngIf="!user" >
-  <a  [routerLink]="['/myAccount/login']" id="login">login</a>
+  <a  [routerLink]="['/bookStore/myAccount/login']" id="login">login</a>
 </li>
 <li *ngIf="!user">
-  <a [routerLink]="['/myAccount/register']" id="register">register</a>
+  <a [routerLink]="['/bookStore/myAccount/register']" id="register">register</a>
 </li>
 <li *ngIf="user" id="logout">
-  <a [routerLink]="['/home']" (click)="logout()">logout</a>
+  <a [routerLink]="['/bookStore/home']" (click)="logout()">logout</a>
 </li>
 <div class="inner-outlet">
   <router-outlet></router-outlet>

@@ -16,7 +16,7 @@ export class AuthProduct implements CanActivate {
             return true;
         }
         // not allow to move to productDetails
-        this.router.navigate(['/products']);
+        this.router.navigate(['/bookStore/products']);
         return false;
     }
 }

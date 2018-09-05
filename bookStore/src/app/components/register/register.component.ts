@@ -34,7 +34,7 @@ export class RegisterComponent {
   submitRegister() {
     let person: User = this.formGroup.value;
     this.userService.registerUser(person);
-    this.router.navigate(['/home']);
+    this.router.navigate(['/bookStore/home']);
   }
 
   createValidatorArr(cntName: string, min: number, max: number, pattern?: RegExp): Array<ValidatorFn> {
@@ -45,7 +45,7 @@ export class RegisterComponent {
       f => f.value && f.value.length < min ? { "val": `${cntName} is min ${min} chars` } : null
     ];
   }
-  
+
   fileChangeEvent(event: any) {
     let files: any[];
     files = event.target.files;
