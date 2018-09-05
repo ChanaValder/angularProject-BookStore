@@ -3,7 +3,6 @@ import { Observable, Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { Book } from '../models/book.model';
 import { VolumeInfo } from '../models/volum-info.model';
-import { element } from '@angular/core/src/render3/instructions';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +12,7 @@ export class BookStoreService {
   
   subjectCart=new Subject();
   book:VolumeInfo;
-  basicURL:string="http://localhost:3500/api";
+  basicURL:string="https://book-store-angular-28249.herokuapp.com/api";
   bookList:Book[];
   search:string;
   //check if use search and go to product detail and want to go back with search

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class UserService {
   
   user: User;
-  basicURL: string = "http://localhost:3500/api";
+  basicURL: string = "https://book-store-angular-28249.herokuapp.com/api";
   subject = new Subject();
   
   constructor(public httpClient: HttpClient,public router:Router) {
@@ -47,10 +47,6 @@ export class UserService {
   logout() {
     localStorage.clear();
     this.subject.next(this.checkUserLogin());
-  }
-// uploud img profile user
-  uploadImage(file: any): any {
-    this.httpClient.post(this.basicURL+"/upload",file).subscribe(p=>{alert(p)})
   }
 
 }

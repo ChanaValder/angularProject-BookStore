@@ -5,8 +5,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const basePath = path.join(__dirname + "/dist");
 const cors = require('cors');
-const multer  = require('multer')
-const upload = multer({ dest: 'uploads/' })
+
 
 app.get(`/`, (req, res) => {
     let linkList = "";
@@ -29,10 +28,6 @@ fs.readdir(basePath, (err, files) => {
         });
     })
 });
-
-
-
-
 
 
 const corsOptions = {
@@ -88,42 +83,6 @@ const handleError = (err, res) => {
         .contentType("text/plain")
         .end("Oops! Something went wrong!");
 };
-
-//upload img
-app.post("/api/upload", upload.single("file" /* name attribute of <file> element in your form */),
-    (req, res) => {
-        console.log("upload");
-        console.log(__dirname);  
-        console.log(req.file);
-        const tempPath = req.file.path;
-        console.log(tempPath);
-        const newFilename = `${uuidv4()}.JPG`;
-        console.log(newFilename);
-        const targetPath = path.join(__dirname, `./uploads/${newFilename}`);
-        console.log(targetPath);
-        fs.rename(tempPath, targetPath, err => {
-            if (err)
-                return handleError(err, res);
-            console.log("rename");
-            res.status(200).send({ newFilename: newFilename });
-        });
-    });
-
-//get image
-const basePath1 = path.join(__dirname);
-
-app.get(`/uploads`, (req, res) => {
-    let fileName = req.query.fileName;
-    res.sendFile(`${basePath1}/uploads/${fileName}`);
-});
-
-// Assuming that 'path/file.txt' is a regular file.
-removeImage=(fileName)=>{
-    fs.unlink(`${basePath1}/uploads/${fileName}`, (err) => {
-        if (err) throw err;
-        console.log('path/file.txt was deleted');
-      });
-}
 
 const port = process.env.PORT || 3500;
 app.listen(port, () => { console.log(`OK`); });

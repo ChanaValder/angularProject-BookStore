@@ -14,12 +14,8 @@ export class RegisterComponent {
   formGroup: FormGroup;
   obj: typeof Object = Object;
 
-  filesToUpload: File;
-
   constructor(public userService: UserService,
               public router: Router) {
-
-    this.filesToUpload = null;
 
     let formGroupConfig = {
       firstName: new FormControl("", this.createValidatorArr("firstName", 2, 15, /^[A-Za-z]+$/)),
@@ -44,13 +40,6 @@ export class RegisterComponent {
       f => f.value && f.value.length > max ? { "val": `${cntName} is max ${max} chars` } : null,
       f => f.value && f.value.length < min ? { "val": `${cntName} is min ${min} chars` } : null
     ];
-  }
-
-  fileChangeEvent(event: any) {
-    let files: any[];
-    files = event.target.files;
-    console.log(files);
-    this.userService.uploadImage(files);
   }
 
 }
